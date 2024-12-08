@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SYCA | Online Education Platform</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font Awesome Free 6.5.1 -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Tambahkan Tailwind CSS -->
+    <link href="assets/css/style.min.css" rel="stylesheet" />
+    <!-- <link href="assets/css/output.css" rel="stylesheet"> -->
+    <!-- Font -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/images/favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    />
+
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.min.css" />
+
+    <!-- Font Awesome -->
+    <link href="assets/css/all.min.css" rel="stylesheet" />
+
+    <!-- Swiffy Slider CSS -->
+    <link href="assets/css/swiffy-slider.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <!-- <link href="assets/css/custom.css" rel="stylesheet" /> -->
+
+    <style>
+      /* Tambahkan gaya khusus untuk latar belakang */
+      .bg-custom {
+        background-image: url("assets/img/bg.svg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .bg-custom-home {
+        background-image: url("assets/img/bg_home.svg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .video-wrapper iframe {
+        max-width: 100%;
+      }
+    </style>
+
+    <!-- JS Libraries -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/swiffy-slider.min.js" defer></script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "800225455535758");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=800225455535758&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- End Meta Pixel Code -->
+  </head>
+
+  <body class="font-['Montserrat'] bg-custom-home">
+    <!-- header start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex items-center w-full px-5 mb-10 bg-transparent lg:p-0"
+    >
+      <div class="container mx-auto">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a
+              href="index.html"
+              class="block py-6 text-lg font-bold text-primary"
+              ><img
+                src="https://startyourcontentacademy.com/assets/img/logo-dark.svg"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <a
+              href="kelas.html"
+              class="mr-6 text-2xl cursor-pointer lg:hidden text-primary"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a
+              href="https://wa.me/+6281374192252"
+              target="_blank"
+              class="mr-12 text-2xl cursor-pointer text-primary lg:hidden"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute block right-4 lg:hidden"
+            >
+              <span
+                class="transition duration-300 origin-top-left hamburger-line"
+              ></span>
+              <span class="transition duration-300 hamburger-line"></span>
+              <span
+                class="transition duration-300 origin-bottom-left hamburger-line"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute hidden py-5 bg-white rounded-lg shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary font-bold outline-emerald-700"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="kelas.html"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Kelas</a
+                  >
+                </li>
+                <!-- Tambahkan rute untuk testimoni di routes.php CodeIgniter -->
+                <li class="group">
+                  <a
+                    href="testimoni.html"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Testimoni</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="tutorial.html"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Tutorial</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="kendala-akses.html"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Kendala Akses</a
+                  >
+                </li>
+                <!-- <li class="hidden group lg:block md:hidden">
+							<div class="relative py-1 mx-4">
+								<input type="text" class="relative w-64 h-8 px-4 py-2 text-base rounded-xl top-37 left-734 ring-1 ring-slate-800 focus:ring-2 focus:outline-none" id="search_val">
+								<i class="absolute right-0 mr-4 text-base transform -translate-y-1/2 top-1/2 text-slate-600 fa-solid fa-magnifying-glass"></i>
+							</div>
+						</li> -->
+                <!-- Tambahkan rute untuk login di routes.php CodeIgniter -->
+                <li class="group lg:hidden">
+                  <a
+                    href="login.html"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hidden px-4 lg:block">
+            <a
+              href="https://wa.me/+6281374192252"
+              target="_blank"
+              class="mr-5 text-2xl cursor-pointer text-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="kelas.html"
+              class="mr-6 text-2xl cursor-pointer text-primary"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+
+            <a
+              href="login.html"
+              class="py-4 px-4 text-base text-white rounded-[20px] bg-primary hover:opacity-80 lg:w-[75px] lg:px-8 lg:h-[20px] text-center login_logout_button"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <div
+      class="fixed hidden w-1/2 mx-auto transform -translate-x-1/2 bg-white border-2 left-1/2 p-7 rounded-2xl h-96 border-emerald-700"
+      id="card-result"
+    >
+      <div class="h-full overflow-y-auto resultView"></div>
+    </div>
+
+    <script>
+      $("#search_val")
+        .focus(function () {
+          $("#card-result").removeClass("hidden").addClass("block");
+        })
+        .blur(function () {
+          setTimeout(function () {
+            $("#card-result").removeClass("block").addClass("hidden");
+          }, 3000); // 3 detik
+        });
+
+      $("#search_val").keyup(function () {
+        $(".resultView").html(
+          '<i class="fa-solid fa-spinner animate-spin"></i>'
+        );
+        search();
+      });
+
+      async function search() {
+        let search_val = $("#search_val").val();
+        var url =
+          "https://startyourcontentacademy.com/Api/search?search=" + search_val;
+
+        await $.ajax({
+          url: url,
+          type: "GET",
+          dataType: "JSON",
+          async: true,
+          success: function (response) {
+            $(".resultView").html(response.view);
+          },
+        });
+      }
+    </script>
+    <!-- Hero section start -->
+    <section id="hero" class="px-5 py-5 mt-10 lg:mt-20 lg:px-[100px]">
+      <div class="container mx-auto">
+        <!-- lg:w-[824px] -->
+        <div
+          class="flex flex-wrap justify-between lg:w-full 2xl:w-full lg:mx-auto 2xl:mx-[0px]"
+        >
+          <div class="flex flex-wrap md:w-1/2 2xl:w-[750px] mt-7">
+            <div class="mx-auto">
+              <h1
+                class="mx-auto font-bold title-section 2xl:text-[72px] 2xl:leading-[79px] lg:text-[42px] lg:text-start lg:leading-[50.4px] text-[30px] leading-10"
+              >
+                Bangun
+                <span class="text-primary"
+                  >Followers <br />
+                  Berkualitas</span
+                >
+                dan <br class="lg:block md:hidden" />
+                <span class="text-primary">Penghasilan dari Konten</span>
+              </h1>
+              <div class="">
+                <h3
+                  class="text-[14px] leading-relaxed mx-auto font-regular 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[20px] text-center mt-5 lg:text-start lg:leading-[30px]"
+                >
+                  Cari tahu rahasia
+                  <span class="font-semibold"
+                    >mengubah Followers <br class="lg:hidden md:hidden" />
+                    menjadi Calon Client/ Customer</span
+                  >
+                  dan <br class="lg:hidden md:hidden" />
+                  <span class="font-semibold">hasilin duit</span> dari konten
+                </h3>
+              </div>
+            </div>
+            <div class="flex justify-between gap-[10px] mx-auto mt-6 lg:mx-0">
+              <a
+                href="kelas.html"
+                class="w-[132px] h-[32px] text-sm py-1.5 px-2 text-white rounded-full bg-primary hover:opacity-80 text-center lg:text-[20px] uppercase font-semibold lg:w-[182px] lg:h-[48px] lg:rounded-[20px] lg:px-[24px] lg:py-[14px]"
+                >Lihat Kelas</a
+              >
+              <!-- Tambahkan rute untuk login di routes.php CodeIgniter -->
+              <a
+                href="login.html"
+                class="w-[158px] h-[32px] text-sm py-1 px-2 text-primary rounded-full bg-transparent border-2 lg:border-4 border-primary hover:opacity-80 lg:text-[20px] text-center uppercase font-semibold lg:rounded-[20px] lg:w-[215px] lg:h-[48px] lg:px-0 lg:py-[12px]"
+                >Login Member</a
+              >
+            </div>
+          </div>
+          <div
+            class="flex items-center justify-center mx-auto mt-7 md:w-1/2 2xl:w-[564px]"
+          >
+            <div
+              class="2xl:w-[564px] 2xl:h-[566px] lg:w-[370px] lg:h-[358.87px]"
+            >
+              <img
+                class="hidden md:block w-[90%] rounded-[45px] 2xl:w-[564px] 2xl:h-[566px] lg:w-[370px] lg:h-[358.87px] my-auto"
+                src="https://startyourcontentacademy.com/assets/img/home/hero.png"
+                alt="Hero"
+              />
+            </div>
+            <img
+              class="md:hidden w-[90%] rounded-[45px] lg:w-[541px] lg:h-[524px]"
+              src="https://startyourcontentacademy.com/assets/img/home/hero_mobile.png"
+              alt="Hero"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- Section brand Start -->
+    <section id="brand" class="px-5 py-5 mt-3 lg:px-[100px] 2xl:-[0px]">
+      <div class="container mx-auto">
+        <div>
+          <p
+            class="mt-5 text-[22px] 2xl:text-[30px] font-semibold text-center lg:leading-[37.8px] lg:text-[20px] mb-10"
+          >
+            SYCA telah bekerjasama dengan 30.000+ Member dan Brand :
+          </p>
+          <div
+            class="grid items-center grid-cols-3 gap-4 mx-auto mt-5 pl-7 2xl:grid-cols-8 2xl:w-full lg:grid-cols-4 lg:w-[725px] 2xl:mx-[0]"
+          >
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                src="https://startyourcontentacademy.com/assets/img/brand/Meta.png"
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                alt="Meta"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                src="https://startyourcontentacademy.com/assets/img/brand/Tokopedia.png"
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                alt="Tokopedia"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                src="https://startyourcontentacademy.com/assets/img/brand/Shopee.png"
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                alt="Shopee"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                src="https://startyourcontentacademy.com/assets/img/brand/Prudential.png"
+                alt="Prudential"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                src="https://startyourcontentacademy.com/assets/img/brand/Kominfo.png"
+                alt="Kominfo"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                src="https://startyourcontentacademy.com/assets/img/brand/Gojek.png"
+                alt="Gojek"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                src="https://startyourcontentacademy.com/assets/img/brand/BCA.png"
+                alt="BCA"
+              />
+            </div>
+            <div class="items-center overflow-hidden rounded-lg h-15">
+              <img
+                class="object-contain w-[83px] h-[81px] my-auto overflow-hidden transition-all"
+                src="https://startyourcontentacademy.com/assets/img/brand/Samsung.png"
+                alt="Samsung"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section brand End -->
+
+    <!-- Section fill x hug start-->
+    <section
+      id="cerita_alumni"
+      class="px-5 py-5 mt-3 lg:px-[100px] 2xl:px-[100px]"
+    >
+      <div class="container mx-auto">
+        <h1
+          class="text-[30px] 2xl:text-[72px] 2xl:leading-[79px] font-bold text-left lg:text-[42px] lg:leading-[50.4px] leading-10"
+        >
+          Bukan Hanya Mengejar
+          <span class="text-primary"
+            >Angka <br />
+            Followers</span
+          >, Tetapi Membangun <br />
+          <span class="text-primary">Audience Berkualitas</span>
+        </h1>
+        <p
+          class="mt-10 text-[16px] text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[20px] lg:leading-[30px] lg:text-justify max-w-[95%]"
+        >
+          Kita percaya untuk bisa
+          <span class="font-semibold">hasilkan duit</span> dan
+          <span class="font-semibold">membangun hidup impianmu dari konten</span
+          >, kamu bukan butuh "banyak Followers", tapi kamu perlu
+          <span class="font-semibold"
+            >mengumpulkan Follower berkualitas yang sesuai dengan tujuanmu</span
+          >. <br />
+          <br />
+          Dan ini cerita-cerita bukti dari Alumni SYCA yang berhasil membangun
+          hidup impian mereka lewat konten yang menarik Follower berkualitas :
+        </p>
+      </div>
+    </section>
+    <!-- Section fill x hug end -->
+
+    <!-- Kisah Section Start -->
+    <div class="w-full -mb-[28.7px]">
+      <img
+        src="https://startyourcontentacademy.com/assets/img/home-runcing1.png"
+        alt="Runcing"
+      />
+    </div>
+    <section
+      id="kisah"
+      class="relative px-5 py-5 lg:px-[200px] bg-opacity-30 my-7 bg-primary"
+    >
+      <div class="container mx-auto">
+        <h1
+          class="font-bold 2xl:text-center text-center text-[30px] leading-[45px] lg:text-[42px] lg:leading-[79px] 2xl:text-[72px] 2xl:leading-[79px]"
+        >
+          Cerita Alumni #KisahSuksesSYCA
+        </h1>
+        <div class="mt-2">
+          <div class="relative">
+            <div
+              class="flex justify-center gap-1 p-5 mt-3 overflow-hidden slider-alumni"
+            >
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155805.png"
+                    alt="Foto 0"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155805.png"
+                    alt="Foto 0"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155805.png"
+                    alt="Foto 0"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155805.png" alt="Foto Coach Lika">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Udah berkali galau akunku ga naik, akhirnya setelah join course SYCA akun IG aku tembus 100k, belum seminggu 125k dan langsung 135k, ga nyangka juga videoku bisa tembus 7.5M views, makasih Ci Vicky dan team 🥰🥰"</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Coach Lika</span> @coachlika</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730154027.png"
+                    alt="Foto 1"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730154027.png"
+                    alt="Foto 1"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730154027.png"
+                    alt="Foto 1"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730154027.png" alt="Foto Vivia ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Ga nyangka dalam sebulan bisa tembus 200k++ followers di IG, mulai konsisten posting dan semakin semangat ngonten lagi setelah nonton video Ci Vicky. Awal mulai posting di tiktok duluan eh malah di IG jadi ngelebihin followers di tiktok!"</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Vivia </span> @viviatal</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155927.png"
+                    alt="Foto 2"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155927.png"
+                    alt="Foto 2"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155927.png"
+                    alt="Foto 2"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155927.png" alt="Foto Tarie ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Setelah aku terapin ilmu SYCA, akun IG awalnya cuman 2500 followers sekarang 54k, tiktok tembus 1000 followers dan youtube 500 subs, dan views IG ku tembus 1.6M hingga dapet omset 25 juta dalam sebulan dan 100 juta bulan selanjutnya! Terimakasih Ci Vicky!"</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Tarie </span> @Tarie_madinah</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730153726.png"
+                    alt="Foto 3"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730153726.png"
+                    alt="Foto 3"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730153726.png"
+                    alt="Foto 3"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730153726.png" alt="Foto Kelly">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Baru 1bulan ikut course SYCA bisa tembus 100k followers, bahkan sblm launching ladybossproject udah banyak orderan sampai batch 2, lanjut ikut reels challenge belum seminggu udah semakin meningkat engagementnya bisa hemat biaya ads 😆 "</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Kelly</span> @kelspatricia</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155903.png"
+                    alt="Foto 4"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155903.png"
+                    alt="Foto 4"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155903.png"
+                    alt="Foto 4"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155903.png" alt="Foto Junar">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Semenjak gua join course Ci Vicky, akun gua jadi grow banget like actually growing, followers IG meningkat ke 60K dan followers tiktok tembus 307k++, bahkan viewers nya tembus di 400k++. Thank you bimbingannya selama ini ci Vicky"</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Junar</span> @junarsyi</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155845.png"
+                    alt="Foto 5"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155846.png"
+                    alt="Foto 5"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155846.png"
+                    alt="Foto 5"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155845.png" alt="Foto Habib">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Alhamdulillah baru join SYCA sebulan, ga nyangka tembus 1 Juta Views, Naik 10.000 followers 2 hari ini, dan orderan rame banget ga berhenti2, omzet naik >300% padahal biasanya habis lebaran gini sepi. Sampai adminku bingung dan harus hiring admin lagi."</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Habib</span> @sweetscoop_</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155828.png"
+                    alt="Foto 6"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155828.png"
+                    alt="Foto 6"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155828.png"
+                    alt="Foto 6"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155828.png" alt="Foto Fajar">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">"Bikin ide ngonten cuman sehari langsung posting, ga nyangka langsung tembus 1M. Akun baru 4 bulan udah bisa tembus 30M, followers tiktok dari 2000 followers sekarang udah tembus 140k 🔥🔥🤩"</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold">Fajar</span> @bungvraww</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155732.png"
+                    alt="Foto 7"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155732.png"
+                    alt="Foto 7"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155732.png"
+                    alt="Foto 7"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155732.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155952.png"
+                    alt="Foto 8"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730155952.png"
+                    alt="Foto 8"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730155952.png"
+                    alt="Foto 8"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730155952.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160018.png"
+                    alt="Foto 9"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160018.png"
+                    alt="Foto 9"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160018.png"
+                    alt="Foto 9"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160018.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160033.png"
+                    alt="Foto 10"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160033.png"
+                    alt="Foto 10"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160033.png"
+                    alt="Foto 10"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160033.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160101.png"
+                    alt="Foto 11"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160101.png"
+                    alt="Foto 11"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160101.png"
+                    alt="Foto 11"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160101.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160116.png"
+                    alt="Foto 12"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160116.png"
+                    alt="Foto 12"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160116.png"
+                    alt="Foto 12"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160116.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160134.png"
+                    alt="Foto 13"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160134.png"
+                    alt="Foto 13"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160134.png"
+                    alt="Foto 13"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160134.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160148.png"
+                    alt="Foto 14"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160148.png"
+                    alt="Foto 14"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160148.png"
+                    alt="Foto 14"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160148.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+              <div class="">
+                <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160300.png"
+                    alt="Foto 15"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/lg/alumni_image_lg_20240730160300.png"
+                    alt="Foto 15"
+                  />
+                </div>
+                <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                  <img
+                    class="lg:max-w-[50%] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/alumni/2xl/alumni_image_2xl_20240730160300.png"
+                    alt="Foto 15"
+                  />
+                </div>
+              </div>
+              <!-- <div class="px-2 py-2 slide">
+							<div class="relative mx-auto rounded-[40px] sm:w-auto h-[582px] px-0 sm:px-6 pt-7 sm:bg-primary sm:bg-opacity-80 lg:w-[684px] lg:h-[556px] lg:flex 2xl:w-[1250px] 2xl:h-[855px]">
+								<img class="block mx-auto w-[233px] h-[311px] rounded-[63px] sm:w-[267px] sm:h-[357px] sm:rounded-[35px] lg:w-[372px] lg:h-[496px] lg:mx-0 lg:rounded-[63px] 2xl:w-[591px] 2xl:h-[789px]" src="https://admin.startyourcontentacademy.com/sitefiles/alumni/alumni_image_20240730160300.png" alt="Foto ">
+								<div class="bg-white w-[233px] h-auto sm:ml-0 rounded-[36px] sm:w-[280px] sm:h-[262px] sm:rounded-[36px] pl-[25px] pt-[24px] lg:px-[36px] lg:py-[40px] 2xl:w-[727px] 2xl:-h[444px] pr-[25px] pb-[24px] absolute sm:bottom-5 lg:w-[372px] lg:h-[296px] lg:right-10 lg:shadow-2xl lg:bottom-1/4 lg:top-auto top-[17rem] left-1/2 lg:left-auto lg:transform-none transform -translate-x-1/2 -translate-y-2/2 2xl:h-auto">
+									<p class="mx-auto text-sm text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px]">""</p>
+									<h5 class="mt-5 text-sm sm:mt-10 text-start 2xl:text-[27px] 2xl:leading-[37.8px] lg:text-[16px] lg:leading-[24px] lg:mt-5"><span class="font-bold"></span> @</h5>
+								</div>
+							</div>
+						</div> -->
+            </div>
+            <div
+              class="absolute inset-0 flex items-center justify-between w-full -translate-y-1/2 lg:px-7 2xl:px-[0px] slider-controls top-1/2"
+            >
+              <button
+                class="px-3 py-1 -ml-4 uppercase bg-transparent border rounded-full shadow-lg 2xl:mx-[200px] lg:mx-[150px] lg:px-6 lg:py-4 border-primary prev-slide-alumni"
+              >
+                <i class="fa-solid fa-angle-left text-primary"></i>
+              </button>
+              <button
+                class="px-3 py-1 -mr-4 uppercase bg-transparent border rounded-full shadow-lg 2xl:mx-[200px] lg:mx-[150px] lg:px-6 lg:py-4 border-primary next-slide-alumni"
+              >
+                <i class="fa-solid fa-angle-right text-primary"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="lg:mt-12 lg:flex lg:mx-auto lg:justify-center lg:gap-10 lg:mb-5"
+        >
+          <div class="my-auto">
+            <h3
+              class="text-[22px] 2xl:text-[44px] leading-[26.82px] font-semibold text-center mt-7 lg:text-[24px] lg:m-0 lg:mx-auto 2xl:leading-[53.64px] lg:leading-[29.26px]"
+            >
+              Dapatkan Ilmu Yang Mereka Pelajari di sini :
+            </h3>
+          </div>
+          <div>
+            <div class="mx-auto my-auto">
+              <button
+                onclick="location.href='kelas.html'"
+                class="uppercase mx-auto block w-[156px] h-[44px] rounded-[20px] pb-1 pt-1.5 mt-6 lg:mt-0 text-base font-semibold text-white px-[12px] py-[24px] text-[16px] bg-primary hover:opacity-95 lg:w-[182px] lg:h-[48px] lg:rounded-[20px] lg:text-[20px] lg:text-[#C7EBE5] lg:m-0 shadow-2xl"
+              >
+                Lihat Kelas
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kisah Section End -->
+
+    <!-- Section Mentoring Start -->
+    <section id="mentoring" class="px-5 py-5 lg:px-[100px] my-7">
+      <div class="container mx-auto">
+        <div class="text-center lg:mt-10">
+          <h1
+            class="font-bold text-center 2xl:text-[72px] 2xl:leading-[79px] text-[36px] leading-10 lg:text-[42px] lg:leading-[79px]"
+          >
+            Fasilitas Belajar <br class="lg:hidden" />
+            di SYCA
+          </h1>
+        </div>
+        <div class="flex flex-wrap justify-center my-10 lg:m-0">
+          <div class="p-5 lg:w-1/2">
+            <img
+              class="hidden lg:block w-full mx-auto 2xl:w-[537px] lg:w-[464px]"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas.png"
+              alt="Fasilitas"
+            />
+            <img
+              class="w-auto h-auto mx-auto md:hidden"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas_mobile.png"
+              alt="Fasilitas"
+            />
+          </div>
+          <div class="p-5 lg:my-auto lg:w-[330px] 2xl:w-1/2">
+            <div class="items-center justify-center mt-3">
+              <h3
+                class="mb-4 text-[22px] font-semibold 2xl:text-[44px] lg:text-[24px] 2xl:leading-[53.64px]"
+              >
+                Video Materi Lengkap & Terstruktur
+              </h3>
+              <p
+                class="text-[14px] 2xl:text[17px] 2xl:leading-[24px] lg:leading-[21px]"
+              >
+                Kamu akan mendapatkan Video Materi yang sudah disusun oleh
+                <span class="font-semibold">Tim Expert SYCA</span> sedemikian
+                rupa supaya kamu mudah mengerti dan mengikuti materi
+                pembelajarannya.
+              </p>
+            </div>
+            <div class="items-center justify-center mt-3">
+              <h3
+                class="mb-4 text-[22px] font-semibold 2xl:text-[44px] lg:text-[24px] 2xl:leading-[53.64px] lg:mt-10"
+              >
+                Materi Terupdate
+              </h3>
+              <p
+                class="text-[14px] 2xl:text[17px] 2xl:leading-[24px] lg:leading-[21px]"
+              >
+                Dunia Sosial Media selalu berkembang. SYCA menjamin kamu akan
+                dapat <span class="font-semibold">Update Materi</span> ketika
+                ada
+                <span class="font-semibold"
+                  >perubahan baru di Sosial Media</span
+                >
+                tanpa keluar biaya sama sekali, alias
+                <span class="font-semibold">GRATIS</span>.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center mt-10">
+          <div class="p-5 lg:hidden">
+            <img
+              class="hidden md:block w-[432px] mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas2.png"
+              alt="Fasilitas"
+            />
+            <img
+              class="w-auto h-auto mx-auto md:hidden"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas2_mobile.png"
+              alt="Fasilitas"
+            />
+          </div>
+          <div class="p-5 lg:my-auto lg:w-[352px] 2xl:w-1/3">
+            <div class="items-center justify-center mt-3">
+              <h3
+                class="mb-4 text-[22px] font-semibold 2xl:text-[44px] lg:text-[24px] 2xl:leading-[53.64px]"
+              >
+                Live Review & QnA
+              </h3>
+              <p
+                class="text-[14px] 2xl:text[17px] 2xl:leading-[24px] lg:leading-[21px]"
+              >
+                Kamu bisa minta
+                <span class="font-semibold"
+                  >dibedah kontenmu dari aspek penulisan, design, atau editing
+                  sesuai kelas yang kamu pilih</span
+                >
+                langsung oleh Tim Expert SYCA, untuk diberi
+                <span class="font-semibold"
+                  >masukan dan evaluasi sesuai dengan kondisimu saat ini</span
+                >.<br /><br />Kamu juga bisa belajar dari pengalaman nyata para
+                <span class="font-semibold">Mentor/ Guest Expert</span> yang
+                sering diundang untuk sharing
+                <span class="font-semibold">ilmu dan rahasia</span> mereka
+                <span class="font-semibold">dari titik nol</span> sampai ke
+                <span class="font-semibold">titik viral</span> dan akhirnya
+                berhasil mencapai impian mereka dari konten
+              </p>
+            </div>
+          </div>
+          <div class="hidden p-5 lg:block 2xl:w-[755px] lg:w-1/2">
+            <img
+              class="hidden w-full mx-auto md:block lg:w-[735px]"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas2.png"
+              alt="Fasilitas"
+            />
+            <img
+              class="w-full mx-auto md:hidden"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas2_mobile.png"
+              alt="Fasilitas"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center mt-10">
+          <div class="p-5 lg:w-1/2">
+            <img
+              class="hidden w-full mx-auto md:block lg:w-full"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas3.png"
+              alt="Fasilitas"
+            />
+            <img
+              class="md:hidden w-auto h-auto lg:w-[475px] lg:h-[528px] mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/home/fasilitas3_mobile.png"
+              alt="Fasilitas"
+            />
+          </div>
+          <div class="p-5 my-auto lg:w-[381px] 2xl:w-1/2">
+            <div class="items-center justify-center mt-3">
+              <h3
+                class="mb-4 text-[22px] font-semibold 2xl:text-[44px] lg:text-[24px] 2xl:leading-[53.64px] lg:leading-[29.26px]"
+              >
+                Grup Bimbingan
+              </h3>
+              <p
+                class="text-[17px] 2xl:text[17px] 2xl:leading-[24px] lg:text-[14px] lg:leading-[21px]"
+              >
+                Kamu gak akan belajar sendirian di SYCA, semua kelas
+                <span class="font-semibold">menyediakan grup bimbingan</span>
+                , dimana kamu bisa bertanya kapan saja, dan ada
+                <span class="font-semibold">Team Expert SYCA </span>
+                yang standby menjawab, beserta
+                <span class="font-semibold"
+                  >teman-teman kreator berpengalaman
+                </span>
+                lainnya untuk networkingmu
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center">
+          <div class="p-5 w-[95%] lg:hidden">
+            <div class="mt-2">
+              <div
+                class="swiffy-slider slider-item-show2 slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation"
+              >
+                <div class="slider-container">
+                  <div class="">
+                    <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                      <img
+                        class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                        src="https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103026.png"
+                        alt="Foto 15"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div>
+									<div class="flex justify-center p-5 overflow-hidden">
+										<div class="w-full max-w-[313px] rounded-[60px] relative overflow-hidden">
+											<img src="https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103026.png" class="w-full h-full" alt="Victoria Wong">
+											<div class="absolute inset-0 bg-[#353535] bg-opacity-25 text-white text-center pt-5 bottom-0 top-[200px]">
+												<h3 class="text-sm font-bold capitalize">Adli Hibatul</h3>
+												<p class="mt-4 text-sm italic font-semibold">Capai Rp 1 Miliar di 73 Ribu Followers </p>
+											</div>
+										</div>
+									</div>
+								</div> -->
+                  <div class="">
+                    <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                      <img
+                        class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                        src="https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103051.png"
+                        alt="Foto 15"
+                      />
+                    </div>
+                  </div>
+                  <!-- <div>
+									<div class="flex justify-center p-5 overflow-hidden">
+										<div class="w-full max-w-[313px] rounded-[60px] relative overflow-hidden">
+											<img src="https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103051.png" class="w-full h-full" alt="Victoria Wong">
+											<div class="absolute inset-0 bg-[#353535] bg-opacity-25 text-white text-center pt-5 bottom-0 top-[200px]">
+												<h3 class="text-sm font-bold capitalize">VICTORIA WONG</h3>
+												<p class="mt-4 text-sm italic font-semibold">(Cici Konten) </p>
+											</div>
+										</div>
+									</div>
+								</div> -->
+                </div>
+
+                <button
+                  type="button"
+                  class="slider-nav bg-primary"
+                  aria-label="Go left"
+                ></button>
+                <button
+                  type="button"
+                  class="slider-nav bg-primary slider-nav-next"
+                ></button>
+              </div>
+            </div>
+          </div>
+          <div class="p-5 my-auto lg:w-1/2">
+            <div
+              class="items-center justify-center mt-3 2xl:w-full lg:w-[369px]"
+            >
+              <h3
+                class="mb-4 text-[22px] font-semibold 2xl:text-[44px] lg:text-[24px] lg:leading-[29.26px]"
+              >
+                Mentor Praktisi
+              </h3>
+              <p
+                class="text-[17px] lg:text-[14px] 2xl:text-[17px] 2xl:leading-[24px] lg:leading-[21px]"
+              >
+                Para Mentor SYCA punya
+                <span class="font-semibold">pencapaian</span> yang jelas dan
+                sudah terjun langsung di bidang tersebut. <br /><br />Artinya
+                apapun yang Kamu pelajari disini, sudah
+                <span class="font-semibold">dicoba dan terbukti berhasil</span>
+                oleh Mentor tersebut.
+              </p>
+            </div>
+          </div>
+          <div class="hidden p-5 lg:block lg:w-1/2">
+            <div class="mt-2">
+              <div class="relative">
+                <div class="justify-center slider-mentor">
+                  <div class="slide">
+                    <div
+                      class="w-[300px] 2xl:w-[529px] 2xl:h-[694px] 2xl:rounded-[107px] h-[393.57px] rounded-[40px] relative mx-auto"
+                    >
+                      <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                        <img
+                          class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                          src="https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103026.png"
+                          alt="Foto 15"
+                        />
+                      </div>
+                      <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                        <img
+                          class="w-[full] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                          src="https://admin.startyourcontentacademy.com/sitefiles/mentor/lg/mentor_image_lg_20240604103026.png"
+                          alt="Foto 15"
+                        />
+                      </div>
+                      <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                        <img
+                          class="w-[full] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                          src="https://admin.startyourcontentacademy.com/sitefiles/mentor/2xl/mentor_image_2xl_20240604103026.png"
+                          alt="Foto 15"
+                        />
+                      </div>
+                    </div>
+                    <!-- <div class="w-[300px] 2xl:w-[529px] 2xl:h-[694px] 2xl:rounded-[107px] h-[393.57px] rounded-[40px] overflow-hidden relative mx-auto bg-[url('https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103026.png')] overflow-hidden" style="background-image:url('https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103026.png');background-size:cover;background-position: center;">
+										<div class="absolute flex flex-col items-center justify-center w-full bottom-0 2xl:h-[30%] h-[45%] bg-[#353535] bg-opacity-[29%] rounded-b-[60px]">
+											<h3 class="text-xl font-semibold text-center 2xl:text-[36px] lg:text-[24px] lg:font-extrabold mx-5 text-white text-[24px] lg:leading-[29.26px] lg:-mt-7">Adli Hibatul</h3>
+											<p class="text-white 2xl:px-4 2xl:text-[24px] 2xl-leading[29px] text-[14px] leading-[17.07px] text-center font-bold mt-6">Capai Rp 1 Miliar di 73 Ribu Followers</p>
+											<p class="text-white 2xl:px-4 2xl:text-[20px] 2xl-leading[24px] text-[14px] leading-[17.07px] text-center font-bold mt-5">Bongkar Rahasia Hasilin MILIARAN Dari Affiliate & Live Tanpa Perlu Banyak Followers!</p>
+										</div>
+									</div> -->
+                  </div>
+                  <div class="slide">
+                    <div
+                      class="w-[300px] 2xl:w-[529px] 2xl:h-[694px] 2xl:rounded-[107px] h-[393.57px] rounded-[40px] relative mx-auto"
+                    >
+                      <div class="mx-auto my-auto lg:hidden 2xl:hidden">
+                        <img
+                          class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden"
+                          src="https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103051.png"
+                          alt="Foto 15"
+                        />
+                      </div>
+                      <div class="hidden mx-auto my-auto lg:block 2xl:hidden">
+                        <img
+                          class="w-[full] h-[full] hidden mx-auto my-auto lg:block 2xl:hidden"
+                          src="https://admin.startyourcontentacademy.com/sitefiles/mentor/lg/mentor_image_lg_20240604103051.png"
+                          alt="Foto 15"
+                        />
+                      </div>
+                      <div class="hidden mx-auto my-auto lg:hidden 2xl:block">
+                        <img
+                          class="w-[full] h-[full] hidden mx-auto my-auto lg:hidden 2xl:block"
+                          src="https://admin.startyourcontentacademy.com/sitefiles/mentor/2xl/mentor_image_2xl_20240604103051.png"
+                          alt="Foto 15"
+                        />
+                      </div>
+                    </div>
+                    <!-- <div class="w-[300px] 2xl:w-[529px] 2xl:h-[694px] 2xl:rounded-[107px] h-[393.57px] rounded-[40px] overflow-hidden relative mx-auto bg-[url('https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103051.png')] overflow-hidden" style="background-image:url('https://admin.startyourcontentacademy.com/sitefiles/mentor/mentor_image_20240604103051.png');background-size:cover;background-position: center;">
+										<div class="absolute flex flex-col items-center justify-center w-full bottom-0 2xl:h-[30%] h-[45%] bg-[#353535] bg-opacity-[29%] rounded-b-[60px]">
+											<h3 class="text-xl font-semibold text-center 2xl:text-[36px] lg:text-[24px] lg:font-extrabold mx-5 text-white text-[24px] lg:leading-[29.26px] lg:-mt-7">VICTORIA WONG</h3>
+											<p class="text-white 2xl:px-4 2xl:text-[24px] 2xl-leading[29px] text-[14px] leading-[17.07px] text-center font-bold mt-6">(Cici Konten)</p>
+											<p class="text-white 2xl:px-4 2xl:text-[20px] 2xl-leading[24px] text-[14px] leading-[17.07px] text-center font-bold mt-5">Passion to Profit Challenge</p>
+										</div>
+									</div> -->
+                  </div>
+                </div>
+                <div
+                  class="absolute inset-0 flex items-center justify-between w-full -translate-y-1/2 lg:px-7 slider-controls top-1/2"
+                >
+                  <button
+                    class="px-3 py-1 -ml-4 uppercase bg-transparent border rounded-full shadow-lg lg:w-[50px] lg:h-[50px] 2xl:-m-5 lg:mx-12 border-primary prev-slide-mentor"
+                  >
+                    <i class="fa-solid fa-angle-left text-primary"></i>
+                  </button>
+                  <button
+                    class="px-3 py-1 -mr-4 uppercase bg-transparent border rounded-full shadow-lg lg:w-[50px] lg:h-[50px] 2xl:-m-5 lg:mx-12 border-primary next-slide-mentor"
+                  >
+                    <i class="fa-solid fa-angle-right text-primary"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Mentoring End -->
+
+    <!-- Section Kelas Start -->
+    <section id="course" class="px-5 py-5 lg:px-[100px] mt-7">
+      <div class="2xl:w-full lg:w-[824px] mx-auto">
+        <div class="container mx-auto">
+          <h1
+            class="text-[36px] font-bold leading-10 text-center 2xl:text-[72px] 2xl:leading-[79px] lg:text-[42px] lg:leading-[42px]"
+          >
+            Pilih Kelas dan <br class="lg:hidden" />
+            Mulai <br class="hidden lg:block" />
+            <span class="text-primary">Perjalanan Kontenmu :</span>
+          </h1>
+          <div class="relative mb-5">
+            <div
+              class="justify-center gap-1 mt-10 overflow-hidden slider 2xl:w-[1,238px] mx-auto"
+            >
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=14+DAYS+WINNING+CONTENT+CHALLENGE+BATCH+3"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/images/Bundle02b_(1)1.png"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=14+DAYS+WINNING+CONTENT+CHALLENGE+BATCH+3';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=Bongkar+Rahasia+Hasilin+MILIARAN+Dari+Affiliate+%26+Live+Tanpa+Perlu+Banyak%C2%A0Followers%21"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/images/SYCA_Class_Thumbnail_-_Affiliate_TikTok_(Std_Ver).jpg"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=Bongkar+Rahasia+Hasilin+MILIARAN+Dari+Affiliate+%26+Live+Tanpa+Perlu+Banyak%C2%A0Followers%21';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=Rahasia+Ubah+Kontenmu+Jadi+Produk+Digital+%3A+Hasilin+100+Juta+dalam+1+Minggu"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/images/WhatsApp_Image_2024-11-11_at_11_33_09.jpeg"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=Rahasia+Ubah+Kontenmu+Jadi+Produk+Digital+%3A+Hasilin+100+Juta+dalam+1+Minggu';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=Strategi+BARU+IG+%3A+Menarik+Followers+Hingga+10x+Lipat+lewat+Manychat+%2810+Menit%29"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/images/SYCA-Strategi_Baru_IG(1080x1350).png"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=Strategi+BARU+IG+%3A+Menarik+Followers+Hingga+10x+Lipat+lewat+Manychat+%2810+Menit%29';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=Bundle+%28+Affiliate+dan+14+Days+Winning+Content+%29"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/images/Bundle02b_(2).png"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=Bundle+%28+Affiliate+dan+14+Days+Winning+Content+%29';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=BUILD+YOUR+CONTENT+SUPERTEAM"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/images/BYCS_Products_b3.png"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=BUILD+YOUR+CONTENT+SUPERTEAM';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=PRIORITY+ACCESS+LIVE+REVIEW+AKUN"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/images/priority_access.png"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=PRIORITY+ACCESS+LIVE+REVIEW+AKUN';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+              <div
+                class="w-[300px] 2xl:w-[529px] 2xl:rounded-[107px] mx-auto px-[10px] hover:bg-primary hover:bg-opacity-35 hover:rounded-[70px] hover:duration-500"
+              >
+                <!-- <div class="mx-auto my-auto overflow-hidden rounded-[30px] drop-shadow-sm"> -->
+                <a
+                  href="https://startyourcontentacademy.com/course_detail?course=Bundle+%28+Build+Your+Content+Superteam+dan+14+Days+Winning+Content+%29"
+                  ><img
+                    class="w-full mx-auto my-auto border-2 border-primary rounded-[30px]"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/images/BYCS_product_mockup_03.png"
+                    alt="Foto 15"
+                /></a>
+                <!-- </div> -->
+                <!-- <button onclick="location.href='https://startyourcontentacademy.com/course_detail?course=Bundle+%28+Build+Your+Content+Superteam+dan+14+Days+Winning+Content+%29';" class="uppercase w-[196px] h-[36px] pb-4 pt-1.5 mt-6 text-base font-semibold text-white rounded-[10px] bg-primary hover:opacity-80 lg:w-[189px] lg:h-[41px] lg:px-[8px] lg:py-[9px] lg:rounded-[10px] lg:text-[14px] mx-auto block my-4">LIHAT DETAIL KELAS</button> -->
+              </div>
+            </div>
+            <div
+              class="absolute flex items-center justify-between w-full top-1/2"
+            >
+              <button
+                class="px-3 py-1 -ml-4 uppercase bg-transparent border rounded-full shadow-lg border-primary prev-slide"
+              >
+                <i class="fa-solid fa-angle-left text-primary"></i>
+              </button>
+              <button
+                class="px-3 py-1 -mr-4 uppercase bg-transparent border rounded-full shadow-lg border-primary next-slide"
+              >
+                <i class="fa-solid fa-angle-right text-primary"></i>
+              </button>
+            </div>
+          </div>
+          <button
+            onclick="location.href='kelas.html'"
+            class="uppercase block mx-auto w-[220px] h-[44px] text-base font-semibold text-white rounded-full bg-primary hover:opacity-80 lg:w-[263px] lg:h-[48px] lg:rounded-[10px] lg:text-[20px]"
+          >
+            LIHAT SEMUA KELAS
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Section Kelas End -->
+
+    <!-- Section FAQ Start -->
+    <section id="faq" class="p-5 lg:px-[100px]">
+      <div class="container mx-auto">
+        <h1
+          class="text-[36px] 2xl:mx-10 2xl:text-[72px] 2xl:leading-[79px] lg:text-[42px] font-bold leading-10 text-center text-primary lg:leading-[79px]"
+        >
+          Pertanyaan Yang Sering Diajukan :
+        </h1>
+        <div class="mt-7">
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apakah course ini cocok untuk pemula?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Yes, karena course ini khusus dibuat dari level yang paling
+              pemula/belum punya ide konten sampai yang Expert dengan bahasa
+              yang gampang dimengerti (ga pake istilah rumit2). Ditambah ada
+              Grup Eksklusif Tanya Jawab ke saya dan creators lainnya seandainya
+              ada kesulitan.
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apa benar akan dibimbing langsung?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Yes, setelah belajar materinya kamu bisa bertanya2 di Grup
+              Eksklusif yang langsung dijawab oleh saya sendiri dan Creators
+              lainnya. Ditambah tiap bulan ada 2x Live dimana kamu bisa ajuin
+              akunmu buat direview (dan saya sering hadirkan Special Guest juga
+              yang akan membagikan materi eksklusif buatmu :)
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apakah cocok untuk Bisnis Online & Jualan?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Cocok, terutama kalo kamu mau bikin kontenmu menarik Followers
+              organik di sosmed, bangun rasa percaya, dan dari situ ubah mereka
+              jadi Client/Customermu Note : disini tidak diajarkan ngiklan, tips
+              closing, dsb, tapi Fokus ke Konten. Materinya bisa kamu pakai
+              untuk bikin konten iklan dan jualanmu menarik.
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">Apakah cocok untuk Kreator?</p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Yes cocok, disini diajarin dari ga punya ide konten, sampai bisa
+              punya personal brand dari bikin konten yang menarik. Ditambah,
+              disini juga bisa belajar cara Menghasilkan dari jadi konten
+              kreator dan bangun bisnis di sosmed (ubah followers jadi clientmu)
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Akses Coursenya berlaku berapa lama?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Sekali daftar kamu sudah dapat akses SEUMUR HIDUP ke materi2 dalam
+              course ini. Jadi bisa kamu akses kapanpun, dan pelajari ulang
+              tanpa kuatir kendala waktu.
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Jadwal Saya padat, apa tetap bisa ikut course ini?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Bisa banget, justru course ini dirancang sekali daftar sudah dapat
+              akses Seumur Hidup supaya bisa ditonton ulang kapanpun dan kamu
+              juga bisa bertanya kapanpun di Grup Eksklusifnya :) Note : Saranku
+              tetap ikuti jadwal Live/bulannya biar hasil belajarmu maksimal ya.
+              Tenang, selalu kita kabarin H-3 sebelom Live kok :)
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apakah coursenya bisa diakses dari HP?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Bisa banget, materinya bisa diakses via HP dan untuk prakteknya
+              sendiri tidak butuh laptop/PC, cukup modal HP sudah bisa bikin
+              konten menarik
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+        </div>
+      </div>
+    </section>
+    <!-- Section FAQ End -->
+    <a
+      href="https://wa.me/+6281374192252"
+      target="_blank"
+      class=""
+      style="
+        position: fixed;
+        bottom: 24px;
+        right: 16px;
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        background-color: #25d366;
+        color: white;
+        box-shadow: 4px 8px 8px hsl(0deg 0% 0% / 0.38);
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+      "
+      ><i class="fa-brands fa-whatsapp" style="margin: auto"></i
+    ></a>
+    <!-- Footer Start -->
+    <footer class="bg-[#353535] bottom-0 w-full text-white pb-6 lg:px-10">
+      <div class="lg:justify-between lg:flex">
+        <div class="p-5">
+          <a href="index.html"
+            ><img
+              class="w-[110px] lg:w-[189px] lg:h-[116px]"
+              src="https://startyourcontentacademy.com/assets/img/logo-footer.png"
+              alt=""
+          /></a>
+          <p class="mt-5">
+            Helping people build and grow their brand through social media
+            content.
+          </p>
+
+          <div class="mt-5 md:hidden lg:hidden">
+            <h3>Cara Menggunakan:</h3>
+            <a href="tutorial.html" class="pt-3 text-lg"
+              ><i class="fa-solid fa-person-chalkboard text-primary"></i>
+              Tutorial</a
+            >
+          </div>
+
+          <h6 class="mt-5 font-semibold">Whatsapp: +62 813-7419-2252</h6>
+          <h6 class="font-semibold">Email: info@syca.com</h6>
+        </div>
+        <div class="p-5">
+          <h3>Kunjungi Social Media Kami</h3>
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/syca" target="_blank"
+              ><img
+                class="h-[50px] w-[50px]"
+                src="https://startyourcontentacademy.com/assets/img/icon/ig.png"
+                alt=""
+            /></a>
+            <a href="https://www.tiktok.com/@syca" target="_blank"
+              ><img
+                class="h-[50px] w-[50px]"
+                src="https://startyourcontentacademy.com/assets/img/icon/tiktok.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="hidden mt-5 lg:block">
+            <h3>Cara Menggunakan:</h3>
+            <a href="tutorial.html" class="pt-3 text-lg"
+              ><i class="fa-solid fa-person-chalkboard text-primary"></i>
+              Tutorial</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- External Scripts -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+</html>

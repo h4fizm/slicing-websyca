@@ -1,0 +1,2332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SYCA | Online Education Platform</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ================== CSS Section ================== -->
+    <!-- Custom CSS -->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://startyourcontentacademy.com/assets/css/tailwind/style.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://startyourcontentacademy.com/assets/template/images/favicon.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://startyourcontentacademy.com/assets/css/custom.css?version=241201-053656"
+    />
+    <link
+      rel="stylesheet"
+      href="https://startyourcontentacademy.com/assets/css/affiliate.css?version=241201-053656"
+    />
+    <style>
+      /* Tambahkan gaya khusus untuk latar belakang */
+      .bg-custom {
+        background-image: url("https://startyourcontentacademy.com/assets/img/bg.svg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .bg-custom-home {
+        background-image: url("https://startyourcontentacademy.com/assets/img/bg_home.svg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .video-wrapper iframe {
+        max-width: 100%;
+      }
+    </style>
+    <!-- ================== End CSS Section ================== -->
+
+    <!-- ================== JS Section ================== -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "800225455535758");
+      fbq("track", "PageView");
+    </script>
+    <script>
+      // Tambahkan fitur Smooth Scroll untuk tombol scroll ke atas
+      document.addEventListener("DOMContentLoaded", function () {
+        const scrollToTopButton = document.querySelector(".rn-progress-parent");
+
+        if (scrollToTopButton) {
+          scrollToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          });
+
+          // Tampilkan tombol ketika pengguna scroll
+          window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+              scrollToTopButton.classList.add("active");
+            } else {
+              scrollToTopButton.classList.remove("active");
+            }
+          });
+        }
+      });
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=800225455535758&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- ================== End JS Section ================== -->
+  </head>
+
+  <body class="font-['Montserrat'] bg-black">
+    <!-- header start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex items-center w-full px-5 mb-10 bg-transparent lg:p-0"
+    >
+      <div class="container mx-auto">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a
+              href="index.html"
+              class="block py-6 text-lg font-bold text-primary"
+              ><img
+                src="https://startyourcontentacademy.com/assets/img/icon/logo.png"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <a
+              href="kelas.html"
+              class="mr-6 text-2xl cursor-pointer lg:hidden text-primary_affiliate"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a
+              href="https://wa.me/+6281374192252"
+              target="_blank"
+              class="mr-12 text-2xl cursor-pointer text-primary_affiliate lg:hidden"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute block right-4 lg:hidden"
+            >
+              <span
+                class="transition duration-300 origin-top-left hamburger-line-affiliate"
+              ></span>
+              <span
+                class="transition duration-300 hamburger-line-affiliate"
+              ></span>
+              <span
+                class="transition duration-300 origin-bottom-left hamburger-line-affiliate"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute hidden py-5 bg-white rounded-lg shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="index.html"
+                    class="flex py-2 mx-8 text-base lg:text-white group-hover:text-primary_affiliate"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="kelas.html"
+                    class="flex py-2 mx-8 text-base lg:text-white group-hover:text-primary_affiliate text-primary_affiliate font-bold outline-emerald-700"
+                    >Kelas</a
+                  >
+                </li>
+                <!-- Tambahkan rute untuk testimoni di routes.php CodeIgniter -->
+                <li class="group">
+                  <a
+                    href="testimoni.html"
+                    class="flex py-2 mx-8 text-base lg:text-white group-hover:text-primary_affiliate"
+                    >Testimoni</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="tutorial.html"
+                    class="flex py-2 mx-8 text-base lg:text-white group-hover:text-primary_affiliate"
+                    >Tutorial</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="kendala-akses.html"
+                    class="flex py-2 mx-8 text-base lg:text-white group-hover:text-primary_affiliate"
+                    >Kendala Akses</a
+                  >
+                </li>
+                <!-- <li class="hidden group lg:block md:hidden">
+							<div class="relative py-1 mx-4">
+								<input type="text" class="relative w-64 h-8 px-4 py-2 text-base rounded-xl top-37 left-734 ring-1 ring-slate-800 focus:ring-2 focus:outline-none" id="search_val">
+								<i class="absolute right-0 mr-4 text-base transform -translate-y-1/2 top-1/2 lg:text-white fa-solid fa-magnifying-glass"></i>
+							</div>
+						</li> -->
+                <!-- Tambahkan rute untuk login di routes.php CodeIgniter -->
+                <li class="group lg:hidden">
+                  <a
+                    href="https://startyourcontentacademy.com/sign_in?bool=true"
+                    class="flex py-2 mx-8 text-base lg:text-white group-hover:text-primary_affiliate"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hidden px-4 lg:block">
+            <a
+              href="https://wa.me/+6281374192252"
+              target="_blank"
+              class="mr-5 text-2xl cursor-pointer text-primary_affiliate"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="kelas.html"
+              class="mr-6 text-2xl cursor-pointer text-primary_affiliate"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+
+            <a
+              href="login.html"
+              class="py-4 px-4 text-base text-white rounded-[20px] bg-primary_affiliate hover:opacity-80 lg:w-[75px] lg:px-8 lg:h-[20px] text-center login_logout_button"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <div
+      class="fixed hidden w-1/2 mx-auto transform -translate-x-1/2 bg-white border-2 left-1/2 p-7 rounded-2xl h-96 border-emerald-700"
+      id="card-result"
+    >
+      <div class="h-full overflow-y-auto resultView"></div>
+    </div>
+
+    <script>
+      $("#search_val")
+        .focus(function () {
+          $("#card-result").removeClass("hidden").addClass("block");
+        })
+        .blur(function () {
+          setTimeout(function () {
+            $("#card-result").removeClass("block").addClass("hidden");
+          }, 3000); // 3 detik
+        });
+
+      $("#search_val").keyup(function () {
+        $(".resultView").html(
+          '<i class="fa-solid fa-spinner animate-spin"></i>'
+        );
+        search();
+      });
+
+      async function search() {
+        let search_val = $("#search_val").val();
+        var url =
+          "https://startyourcontentacademy.com/Api/search?search=" + search_val;
+
+        await $.ajax({
+          url: url,
+          type: "GET",
+          dataType: "JSON",
+          async: true,
+          success: function (response) {
+            $(".resultView").html(response.view);
+          },
+        });
+      }
+    </script>
+
+    <!-- Hero section start -->
+    <section id="hero" class="p-5 mt-20 bg-black lg:px-[100px]">
+      <div class="container mx-auto">
+        <div class="lg:pt-12">
+          <div class="lg:w-[824px] 2xl:w-[1142px] mx-auto">
+            <h1
+              class="text-white text-[24px] leading-[29.26px] font-bold text-center lg:text-[40px] lg:leading-[48.76px] lg:text-center 2xl:text-[48px] 2xl:leading-[58.51px]"
+            >
+              <!-- Bongkar Rahasia Hasilin MILIARAN dari Affiliate & Live Tanpa Perlu Banyak <br class="hidden lg:block"> Followers! -->
+              Bongkar Rahasia Hasilin MILIARAN Dari Affiliate & Live Tanpa Perlu
+              Banyak Followers!
+            </h1>
+          </div>
+          <div
+            class="w-[318px] h-[110px] rounded-[20px] py-[15px] px-[12px] border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] mt-7 mx-auto lg:w-[834px] lg:h-[80px] lg:py-[12px] lg:px-[30px] lg:rounded-[20px] 2xl:w-[973px] 2xl:h-[95px]"
+          >
+            <h3
+              class="text-center text-white text-[15px] leading-[19px] lg:leading-[24.38px] font-bold lg:text-[20px] h-[20px] 2xl:text-[24px] 2xl:leading-[29.26px]"
+            >
+              <!-- Ga hanya Tiktok, ilmunya berlaku di Platform Affiliate/Sosmed manapun Tanpa perlu Banyak Followers & Modal Besar -->
+              Ga Hanya Tiktok, Ilmunya Berlaku Di Platform Affiliate / Sosmed
+              Manapun Tanpa Perlu Banyak Followers & Modal Besar
+            </h3>
+          </div>
+          <div
+            class="flex flex-wrap justify-center gap-2 mx-auto mt-5 lg:gap-7"
+          >
+            <div>
+              <a
+                onclick="openBundleModal()"
+                class="inline-block text-center font-semibold text-white w-[150px] h-[47px] rounded-[40px] py-[13px] px-[12px] bg-[#FE2858] hover:opacity-80 uppercase text-[12px] my-1 lg:w-[290px] lg:h-[54px] lg:py-[11px] lg:text-[20px]"
+              >
+                Daftar Sekarang
+              </a>
+            </div>
+            <div>
+              <a
+                href="login.html"
+                class="inline-block text-center font-semibold w-[150px] h-[47px] rounded-[40px] py-[12px] px-[18px] bg-transparent border border-primary_affiliate text-primary_affiliate hover:opacity-80 uppercase text-[12px] my-1 lg:w-[290px] lg:h-[54px] lg:py-[11px] lg:text-[20px]"
+              >
+                Login Member
+              </a>
+            </div>
+          </div>
+          <div
+            class="mx-auto w-[335px] h-[191px] rounded-[20px] border-8 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] mt-10 overflow-hidden lg:w-[824px] lg:h-[459px] lg:rounded-[20px] 2xl:w-[1336px] 2xl:h-[704px]"
+          >
+            <iframe
+              class="w-full h-full rounded-[20px] lg:rounded-[20px] mx-auto"
+              src="https://www.youtube.com/embed/_cBgzvXtA6E?si=oGa4Lju2NOsMo83t"
+            ></iframe>
+          </div>
+          <div
+            class="w-[335px] h-[220px] p-[20px] flex flex-wrap justify-center mx-auto mt-10 bg-white shadow-lg rounded-[45px] lg:rounded-[40px] lg:w-[824px] lg:justify-center lg:h-[140px] lg:p-0 lg:px-1 lg:gap-0 2xl:w-[1336px] 2xl:h-[140px]"
+          >
+            <div
+              class="items-center my-auto lg:mx-10 w-[145px] h-[70px] lg:w-[116px] lg:h-[59px] lg:p-0 2xl:w-[173.84px] 2xl:mt-3"
+            >
+              <h3
+                class="text-[32px] font-bold text-center text-primary_affiliate lg:text-[32px] 2xl:text-[44px]"
+              >
+                30K+
+              </h3>
+              <p
+                class="text-center text-[14px] text-primary_affiliate lg:text-[14px] lg:w-full 2xl:text-[24px]"
+              >
+                Member Kelas
+              </p>
+            </div>
+            <div
+              class="items-center my-auto lg:mx-10 w-[145px] h-[70px] lg:w-[102px] lg:h-[59px] lg:p-0 2xl:w-[154.53px] 2xl:mt-3"
+            >
+              <h3
+                class="text-[32px] font-bold text-center text-primary_affiliate lg:text-[32px] 2xl:text-[44px]"
+              >
+                72
+              </h3>
+              <p
+                class="text-center text-[14px] text-primary_affiliate lg:text-[14px] lg:w-full 2xl:text-[24px]"
+              >
+                Video Materi
+              </p>
+            </div>
+            <div
+              class="items-center my-auto lg:mx-10 w-[145px] h-[70px] lg:w-auto lg:h-[59px] lg:p-0 2xl:mt-3"
+            >
+              <h3
+                class="text-[32px] font-bold text-center text-primary_affiliate lg:text-[32px] 2xl:text-[44px]"
+              >
+                8h
+              </h3>
+              <p
+                class="text-center text-[14px] text-primary_affiliate lg:text-[14px] lg:w-full 2xl:text-[24px]"
+              >
+                Waktu Penyelesaian
+              </p>
+            </div>
+            <div
+              class="items-center my-auto lg:mx-10 w-[145px] h-[70px] lg:w-[119px] lg:h-[59px] lg:p-0 2xl:w-auto 2xl:mt-3"
+            >
+              <h3
+                class="text-[32px] font-bold text-center text-primary_affiliate lg:text-[32px] 2xl:text-[44px]"
+              >
+                5.0
+              </h3>
+              <p
+                class="text-center text-[14px] text-primary_affiliate lg:text-[14px] lg:w-full 2xl:text-[24px]"
+              >
+                Rating Peserta
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+
+    <!-- Kisah Section Start -->
+    <section id="kisah" class="p-5 my-4 bg-black lg:px-[100px]">
+      <div class="container mx-auto">
+        <h3
+          class="text-white text-[15px] font-bold text-center mx-auto leading-[18.29px] 2xl:text-[27px] 2xl:leading-[32.91px] lg:text-[24px] lg:leading-[29.26px]"
+        >
+          #KisahSuksesSYCA
+        </h3>
+        <!-- <div class="2xl:px-56 lg:w-[824px] 2xl:w-auto lg:mx-auto bg-red-700 lg:px-0"> -->
+        <div class="mx-auto lg:w-[824px] 2xl:px-56 2xl:w-auto">
+          <h1
+            class="inline-block text-[24px] font-semibold mx-auto text-center text-white leading-[29.26px] mt-5 lg:mt-2 2xl:text-[64px] 2xl:leading-[78.02px] capitalize lg:text-[40px] lg:leading-[48.76px]"
+          >
+            perubahan apa yang mereka dapatkan setelah bergabung kelas ini?
+          </h1>
+        </div>
+        <!-- </div> -->
+        <div class="w-[92%] 2xl:w-[1260px] lg:w-[855px] mx-auto mt-10">
+          <div
+            class="swiffy-slider slider-item-show2 slider-nav-outside slider-nav-round slider-nav-visible slider-indicators-outside slider-indicators-round slider-indicators-dark slider-nav-animation"
+          >
+            <div class="slider-container">
+              <div
+                class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px]"
+              >
+                <div
+                  class="bg-white rounded-[45px] py-7 px-7 w-full h-full mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                >
+                  <div class="flex w-full gap-2 mx-auto">
+                    <div class="lg:w-auto">
+                      <div
+                        class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]"
+                      >
+                        <img
+                          src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Kang_Syarif.jpg"
+                          class="float-left object-center w-full rounded-full"
+                          alt="Photo Profile"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto"
+                    >
+                      <h3
+                        class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]"
+                      >
+                        Kang Syarif
+                      </h3>
+                      <span
+                        class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]"
+                        >@kangsyarif_</span
+                      >
+                      <div class="w-full mt-0 2xl:mt-5">
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                      </div>
+                      <p
+                        class="my-5 lg:mt-1 text-slate-600 2xl:text-[22px] lg:text-[16px] hidden lg:block"
+                      >
+                        <span class="text-short">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan ...
+                        </span>
+                        <span class="text-full" style="display: none">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan di 12.12
+                          tembus sampai 4.5 Juta. Semangat ngonten, terimakasih
+                          ci Vicky dan team 🔥🔥
+                        </span>
+                        <br /><br />
+
+                        <a
+                          class="text-primary"
+                          style="cursor: pointer"
+                          onclick="show_full_description(this)"
+                          >lihat selanjutnya</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="lg:mt-10">
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan ...
+                    </p>
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full"
+                      style="display: none"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan di 12.12 tembus
+                      sampai 4.5 Juta. Semangat ngonten, terimakasih ci Vicky
+                      dan team 🔥🔥
+                    </p>
+                    <a
+                      class="text-primary lg:hidden"
+                      style="cursor: pointer"
+                      onclick="show_full_description(this)"
+                      >lihat selanjutnya</a
+                    >
+                    <!-- <a href="https://startyourcontentacademy.com/testimoni_course?category=9&course=2&search=" class="text-primary">lihat selanjutnya</a> -->
+                    <!-- <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"> -->
+                    <iframe
+                      class="w-full bg-white 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto cursor-pointer lg:w-[272.55px] lg:h-[448.9px]"
+                      src="https://www.youtube.com/embed/2LiekGx_VxQ?si=MZYnxXoMqdgPX156"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px]"
+              >
+                <div
+                  class="bg-white rounded-[45px] py-7 px-7 w-full h-full mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                >
+                  <div class="flex w-full gap-2 mx-auto">
+                    <div class="lg:w-auto">
+                      <div
+                        class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]"
+                      >
+                        <img
+                          src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Kang_Syarif.jpg"
+                          class="float-left object-center w-full rounded-full"
+                          alt="Photo Profile"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto"
+                    >
+                      <h3
+                        class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]"
+                      >
+                        Kang Robin
+                      </h3>
+                      <span
+                        class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]"
+                        >@kangsyarif_</span
+                      >
+                      <div class="w-full mt-0 2xl:mt-5">
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                      </div>
+                      <p
+                        class="my-5 lg:mt-1 text-slate-600 2xl:text-[22px] lg:text-[16px] hidden lg:block"
+                      >
+                        <span class="text-short">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan ...
+                        </span>
+                        <span class="text-full" style="display: none">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan di 12.12
+                          tembus sampai 4.5 Juta. Semangat ngonten, terimakasih
+                          ci Vicky dan team 🔥🔥
+                        </span>
+                        <br /><br />
+
+                        <a
+                          class="text-primary"
+                          style="cursor: pointer"
+                          onclick="show_full_description(this)"
+                          >lihat selanjutnya</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="lg:mt-10">
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan ...
+                    </p>
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full"
+                      style="display: none"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan di 12.12 tembus
+                      sampai 4.5 Juta. Semangat ngonten, terimakasih ci Vicky
+                      dan team 🔥🔥
+                    </p>
+                    <a
+                      class="text-primary lg:hidden"
+                      style="cursor: pointer"
+                      onclick="show_full_description(this)"
+                      >lihat selanjutnya</a
+                    >
+                    <!-- <a href="https://startyourcontentacademy.com/testimoni_course?category=9&course=2&search=" class="text-primary">lihat selanjutnya</a> -->
+                    <!-- <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"> -->
+                    <iframe
+                      class="w-full bg-white 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto cursor-pointer lg:w-[272.55px] lg:h-[448.9px]"
+                      src="https://www.youtube.com/embed/2LiekGx_VxQ?si=MZYnxXoMqdgPX156"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px]"
+              >
+                <div
+                  class="bg-white rounded-[45px] py-7 px-7 w-full h-full mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                >
+                  <div class="flex w-full gap-2 mx-auto">
+                    <div class="lg:w-auto">
+                      <div
+                        class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]"
+                      >
+                        <img
+                          src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Kang_Syarif.jpg"
+                          class="float-left object-center w-full rounded-full"
+                          alt="Photo Profile"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto"
+                    >
+                      <h3
+                        class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]"
+                      >
+                        Kang Valen
+                      </h3>
+                      <span
+                        class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]"
+                        >@kangsyarif_</span
+                      >
+                      <div class="w-full mt-0 2xl:mt-5">
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                      </div>
+                      <p
+                        class="my-5 lg:mt-1 text-slate-600 2xl:text-[22px] lg:text-[16px] hidden lg:block"
+                      >
+                        <span class="text-short">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan ...
+                        </span>
+                        <span class="text-full" style="display: none">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan di 12.12
+                          tembus sampai 4.5 Juta. Semangat ngonten, terimakasih
+                          ci Vicky dan team 🔥🔥
+                        </span>
+                        <br /><br />
+
+                        <a
+                          class="text-primary"
+                          style="cursor: pointer"
+                          onclick="show_full_description(this)"
+                          >lihat selanjutnya</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="lg:mt-10">
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan ...
+                    </p>
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full"
+                      style="display: none"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan di 12.12 tembus
+                      sampai 4.5 Juta. Semangat ngonten, terimakasih ci Vicky
+                      dan team 🔥🔥
+                    </p>
+                    <a
+                      class="text-primary lg:hidden"
+                      style="cursor: pointer"
+                      onclick="show_full_description(this)"
+                      >lihat selanjutnya</a
+                    >
+                    <!-- <a href="https://startyourcontentacademy.com/testimoni_course?category=9&course=2&search=" class="text-primary">lihat selanjutnya</a> -->
+                    <!-- <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"> -->
+                    <iframe
+                      class="w-full bg-white 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto cursor-pointer lg:w-[272.55px] lg:h-[448.9px]"
+                      src="https://www.youtube.com/embed/2LiekGx_VxQ?si=MZYnxXoMqdgPX156"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pr-2 rounded-[45px] w-[250px] h-[661px] 2xl:w-[540px] 2xl:h-[1000px] 2xl:rounded-[45px] slide px-2 lg:w-[369.97px] lg:min-h-[666.22px]"
+              >
+                <div
+                  class="bg-white rounded-[45px] py-7 px-7 w-full h-full mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                >
+                  <div class="flex w-full gap-2 mx-auto">
+                    <div class="lg:w-auto">
+                      <div
+                        class="w-[50px] h-[50px] sm:w-[100px] sm:h-[100px] rounded-full overflow-hidden border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] mt-3 ml-3 lg:w-[50px] lg:h-[50px] 2xl:w-[89.9px] 2xl:h-[89.9px]"
+                      >
+                        <img
+                          src="https://admin.startyourcontentacademy.com/sitefiles/testimony/account/Kang_Syarif.jpg"
+                          class="float-left object-center w-full rounded-full"
+                          alt="Photo Profile"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="mt-3 2xl:mt-5 lg:w-[259.97px] 2xl:w-auto lg:mt-2 2xl:h-auto"
+                    >
+                      <h3
+                        class="font-semibold text-[16px] 2xl:text-[27px] lg:text-[18px]"
+                      >
+                        Kang Irfan
+                      </h3>
+                      <span
+                        class="inline-block 2xl:ml-1 mt-2 text-sm 2xl:text-[27px] lg:text-[18px]"
+                        >@kangsyarif_</span
+                      >
+                      <div class="w-full mt-0 2xl:mt-5">
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                        <i
+                          class="fa-solid text-warning fa-star w-[5px] 2xl:w-[7px] mx-1"
+                        ></i>
+                      </div>
+                      <p
+                        class="my-5 lg:mt-1 text-slate-600 2xl:text-[22px] lg:text-[16px] hidden lg:block"
+                      >
+                        <span class="text-short">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan ...
+                        </span>
+                        <span class="text-full" style="display: none">
+                          Ga nyangka setelah ikut course tiktok affiliate, dari
+                          live 1 jam aja tembus omset 1.9 Juta, bahkan di 12.12
+                          tembus sampai 4.5 Juta. Semangat ngonten, terimakasih
+                          ci Vicky dan team 🔥🔥
+                        </span>
+                        <br /><br />
+
+                        <a
+                          class="text-primary"
+                          style="cursor: pointer"
+                          onclick="show_full_description(this)"
+                          >lihat selanjutnya</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="lg:mt-10">
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-short"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan ...
+                    </p>
+                    <p
+                      class="mt-5 text-slate-600 2xl:text-[27px] lg:hidden text-full"
+                      style="display: none"
+                    >
+                      Ga nyangka setelah ikut course tiktok affiliate, dari live
+                      1 jam aja tembus omset 1.9 Juta, bahkan di 12.12 tembus
+                      sampai 4.5 Juta. Semangat ngonten, terimakasih ci Vicky
+                      dan team 🔥🔥
+                    </p>
+                    <a
+                      class="text-primary lg:hidden"
+                      style="cursor: pointer"
+                      onclick="show_full_description(this)"
+                      >lihat selanjutnya</a
+                    >
+                    <!-- <a href="https://startyourcontentacademy.com/testimoni_course?category=9&course=2&search=" class="text-primary">lihat selanjutnya</a> -->
+                    <!-- <div class="w-full bg-[#353535] 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto overflow-hidden"> -->
+                    <iframe
+                      class="w-full bg-white 2xl:w-[363.79px] 2xl:h-[646.74px] rounded-[28px] mt-5 2xl:mt-0 h-[350px] mx-auto cursor-pointer lg:w-[272.55px] lg:h-[448.9px]"
+                      src="https://www.youtube.com/embed/2LiekGx_VxQ?si=MZYnxXoMqdgPX156"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                    <!-- </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              class="slider-nav bg-primary"
+              aria-label="Go left"
+            ></button>
+            <button
+              type="button"
+              class="slider-nav bg-primary slider-nav-next"
+              aria-label="Go left"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kisah Section End -->
+
+    <!-- Mentor Start-->
+    <section class="p-5 my-4 bg-white lg:px-[100px]">
+      <h1
+        class="text-center mx-auto text-[24px] leading-[29.26px] font-bold 2xl:text-[72px] 2xl:leading-[87.77px] 2xl:my-10 lg:text-[40px] lg:leading-[48.76px] lg:w-[573.29px] 2xl:w-auto"
+      >
+        Yuk Kenalan Dengan Mentormu!
+      </h1>
+      <div class="mx-auto mt-2 lg:w-[824px] lg:h-[774px] 2xl:w-auto 2xl:h-auto">
+        <img
+          src="https://startyourcontentacademy.com/assets/img/mentor.png"
+          class="mx-auto"
+          alt="Mentor 1"
+        />
+      </div>
+      <div class="2xl:px-[300px] lg:w-[824px] 2xl:w-auto mx-auto">
+        <h3
+          class="mt-5 text-center text-[24px] leading-[29.26px] 2xl:text-[48px] 2xl:leading-[58.51px] lg:text-[36px] lg:leading-[43.88px]"
+        >
+          Content Creator yang berhasil tembus penjualan
+          <span class="font-bold text-primary_affiliate"
+            >1 Miliar dalam 5 Bulan</span
+          >
+          hanya di
+          <span class="font-bold text-primary_affiliate">70,000 Followers</span>
+          dan berhasil meraih :
+        </h3>
+      </div>
+      <div class="mx-auto lg:w-[824px] 2xl:w-auto">
+        <div class="flex flex-wrap justify-center gap-0 mt-10 2xl:gap-4">
+          <div>
+            <img
+              class="mx-auto mt-5 2xl:w-[404px] 2xl:h-[698px] lg:w-[301px] lg:h-[520px]"
+              src="https://startyourcontentacademy.com/assets/img/content-creator1.png"
+              alt="Content Creator 1"
+            />
+          </div>
+          <div>
+            <img
+              class="mx-auto mt-5 2xl:w-[679px] 2xl:h-[704px] lg:w-[511px] lg:h-[530px]"
+              src="https://startyourcontentacademy.com/assets/img/content-creator2.png"
+              alt="Content Creator 2"
+            />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-center gap-0 mt-5 2xl:gap-4">
+          <div>
+            <img
+              class="mx-auto mt-5 2xl:w-[514px] 2xl:h-[534px] lg:w-[402px] lg:h-[418px]"
+              src="https://startyourcontentacademy.com/assets/img/content-creator3.png"
+              alt="Content Creator 3"
+            />
+          </div>
+          <div>
+            <img
+              class="mx-auto mt-5 2xl:w-[491px] 2xl:h-[534px] lg:w-[384px] lg:h-[418px]"
+              src="https://startyourcontentacademy.com/assets/img/content-creator4.png"
+              alt="Content Creator 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mentor End -->
+
+    <!-- Topik Start -->
+    <section class="m-0 bg-black px-7 lg:px-[100px]">
+      <div class="px-3">
+        <h1
+          class="text-center mx-auto text-[24px] leading-[29.26px] font-bold text-white 2xl:text-[64px] 2xl:leading-[78.02px] 2xl:my-10 lg:text-[40px] lg:leading-[48.76px]"
+        >
+          Topik yang Dibahas di Course Ini :
+        </h1>
+      </div>
+      <div class="mx-auto my-10">
+        <div
+          class="w-[310px] rounded-[20px] py-[20px] px-[10px] bg-white mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] my-5 2xl:w-[1336px] 2xl:flex 2xl:h-auto 2xl:p-7 2xl:rounded-[69px] lg:w-[812px] lg:h-auto lg:rounded-[32px] lg:p-[40px]"
+        >
+          <div class="lg:w-[732px] 2xl:w-[1256px] lg:flex lg:gap-4 2xl:mt-4">
+            <div
+              class="w-[289px] h-[162px] rounded-[10px] 2xl:w-[640px] 2xl:h-[360px] px-1 lg:w-[256px] lg:h-[144px]"
+            >
+              <iframe
+                class="w-full 2xl:w-[640px] h-full rounded-[10px]"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                src="https://www.youtube.com/embed/Tkjv7EWjSWs?si=0av-22n0cW9xpFUo"
+              ></iframe>
+            </div>
+            <div class="mt-10 2xl:ml-1 lg:w-[456px] 2xl:w-[576px] lg:mt-0">
+              <div class="flex 2xl:mt-0">
+                <div class="my-auto 2xl:m-0 2xl:mt-1 lg:my-0">
+                  <span
+                    class="mx-auto float-left w-[50px] h-[50px] py-3 px-3 mr-4 text-xl font-semibold text-center rounded-full bg-[#FE2858] text-white lg:w-[32px] lg:h-[32px] 2xl:w-[56.87px] 2xl:h-[56.87px] lg:text-[24px] lg:leading-[28.13px] lg:py-1 lg:px-1 2xl:py-4"
+                    >1</span
+                  >
+                </div>
+                <div class="my-auto 2xl:m-0">
+                  <h2
+                    class="text-[20px] font-semibold leading-[24.38px] 2xl:text-[36px] 2xl:leading-[43.88px] lg:text-[24px]"
+                  >
+                    Module 1 : Pengenalan Affiliate Marketing
+                  </h2>
+                </div>
+              </div>
+              <div class="px-2 mt-5 2xl:ml-7 lg:mt-0 2xl:mt-5">
+                <ul
+                  class="list-none font-regular 2xl:text-[20px] 2xl:leading-[30px] lg:text-[16px] lg:leading-[28px]"
+                >
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Menemukan Topik Konten yang Ideal dan Winning Content
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Menentukan niche/target market bagi yang punya Potensi
+                    Profit kedepannya
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Membangun Personal Branding yang authentic dan beda dari
+                    kompetitor
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[310px] rounded-[20px] py-[20px] px-[10px] bg-white mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] my-5 2xl:w-[1336px] 2xl:flex 2xl:h-auto 2xl:p-7 2xl:rounded-[69px] lg:w-[812px] lg:h-auto lg:rounded-[32px] lg:p-[40px]"
+        >
+          <div class="lg:w-[732px] 2xl:w-[1256px] lg:flex lg:gap-4 2xl:mt-4">
+            <div
+              class="w-[289px] h-[162px] rounded-[10px] 2xl:w-[640px] 2xl:h-[360px] px-1 lg:w-[256px] lg:h-[144px]"
+            >
+              <iframe
+                class="w-full 2xl:w-[640px] h-full rounded-[10px]"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                src="https://www.youtube.com/embed/W8u6c92jdb8?si=lp9eot1J_5js37J-"
+              ></iframe>
+            </div>
+            <div class="mt-10 2xl:ml-1 lg:w-[456px] 2xl:w-[576px] lg:mt-0">
+              <div class="flex 2xl:mt-0">
+                <div class="my-auto 2xl:m-0 2xl:mt-1 lg:my-0">
+                  <span
+                    class="mx-auto float-left w-[50px] h-[50px] py-3 px-3 mr-4 text-xl font-semibold text-center rounded-full bg-[#FE2858] text-white lg:w-[32px] lg:h-[32px] 2xl:w-[56.87px] 2xl:h-[56.87px] lg:text-[24px] lg:leading-[28.13px] lg:py-1 lg:px-1 2xl:py-4"
+                    >2</span
+                  >
+                </div>
+                <div class="my-auto 2xl:m-0">
+                  <h2
+                    class="text-[20px] font-semibold leading-[24.38px] 2xl:text-[36px] 2xl:leading-[43.88px] lg:text-[24px]"
+                  >
+                    Module 2 : Riset Produk Laris & Cara Mulai Affiliate
+                  </h2>
+                </div>
+              </div>
+              <div class="px-2 mt-5 2xl:ml-7 lg:mt-0 2xl:mt-5">
+                <ul
+                  class="list-none font-regular 2xl:text-[20px] 2xl:leading-[30px] lg:text-[16px] lg:leading-[28px]"
+                >
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Cara Memilih & Setup Produk Affiliate
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Strategi Riset Produk Laris & Konten
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Strategi Rahasia Mendapatkan Sampel Gratis dari Seller
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    BONUS : Keuntungan & Cara Menjadi Kreator Resmi (Subsidi,
+                    Campaign, dsb)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[310px] rounded-[20px] py-[20px] px-[10px] bg-white mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] my-5 2xl:w-[1336px] 2xl:flex 2xl:h-auto 2xl:p-7 2xl:rounded-[69px] lg:w-[812px] lg:h-auto lg:rounded-[32px] lg:p-[40px]"
+        >
+          <div class="lg:w-[732px] 2xl:w-[1256px] lg:flex lg:gap-4 2xl:mt-4">
+            <div
+              class="w-[289px] h-[162px] rounded-[10px] 2xl:w-[640px] 2xl:h-[360px] px-1 lg:w-[256px] lg:h-[144px]"
+            >
+              <iframe
+                class="w-full 2xl:w-[640px] h-full rounded-[10px]"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                src="https://www.youtube.com/embed/flGAxai9pDM?si=dtmqIIJHCjgcT3o5"
+              ></iframe>
+            </div>
+            <div class="mt-10 2xl:ml-1 lg:w-[456px] 2xl:w-[576px] lg:mt-0">
+              <div class="flex 2xl:mt-0">
+                <div class="my-auto 2xl:m-0 2xl:mt-1 lg:my-0">
+                  <span
+                    class="mx-auto float-left w-[50px] h-[50px] py-3 px-3 mr-4 text-xl font-semibold text-center rounded-full bg-[#FE2858] text-white lg:w-[32px] lg:h-[32px] 2xl:w-[56.87px] 2xl:h-[56.87px] lg:text-[24px] lg:leading-[28.13px] lg:py-1 lg:px-1 2xl:py-4"
+                    >3</span
+                  >
+                </div>
+                <div class="my-auto 2xl:m-0">
+                  <h2
+                    class="text-[20px] font-semibold leading-[24.38px] 2xl:text-[36px] 2xl:leading-[43.88px] lg:text-[24px]"
+                  >
+                    Module 3 : Strategi Konten FYP Viral & Hasilin Penjualan
+                    Tinggi
+                  </h2>
+                </div>
+              </div>
+              <div class="px-2 mt-5 2xl:ml-7 lg:mt-0 2xl:mt-5">
+                <ul
+                  class="list-none font-regular 2xl:text-[20px] 2xl:leading-[30px] lg:text-[16px] lg:leading-[28px]"
+                >
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Rahasia Algoritma/Cara Kerja Tiktok & Bahaya FLKS
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Cara Menentukan Target Market & Mencari Ide Konten Menarik
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Membuat kalimat 3 Detik Pertama yang Bikin Orang KLIK
+                    Videomu (HOOK)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[310px] rounded-[20px] py-[20px] px-[10px] bg-white mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] my-5 2xl:w-[1336px] 2xl:flex 2xl:h-auto 2xl:p-7 2xl:rounded-[69px] lg:w-[812px] lg:h-auto lg:rounded-[32px] lg:p-[40px]"
+        >
+          <div class="lg:w-[732px] 2xl:w-[1256px] lg:flex lg:gap-4 2xl:mt-4">
+            <div
+              class="w-[289px] h-[162px] rounded-[10px] 2xl:w-[640px] 2xl:h-[360px] px-1 lg:w-[256px] lg:h-[144px]"
+            >
+              <iframe
+                class="w-full 2xl:w-[640px] h-full rounded-[10px]"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                src="https://www.youtube.com/embed/ZDRen1dK0uQ?si=h3mcFWQQ-qdwLgST"
+              ></iframe>
+            </div>
+            <div class="mt-10 2xl:ml-1 lg:w-[456px] 2xl:w-[576px] lg:mt-0">
+              <div class="flex 2xl:mt-0">
+                <div class="my-auto 2xl:m-0 2xl:mt-1 lg:my-0">
+                  <span
+                    class="mx-auto float-left w-[50px] h-[50px] py-3 px-3 mr-4 text-xl font-semibold text-center rounded-full bg-[#FE2858] text-white lg:w-[32px] lg:h-[32px] 2xl:w-[56.87px] 2xl:h-[56.87px] lg:text-[24px] lg:leading-[28.13px] lg:py-1 lg:px-1 2xl:py-4"
+                    >4</span
+                  >
+                </div>
+                <div class="my-auto 2xl:m-0">
+                  <h2
+                    class="text-[20px] font-semibold leading-[24.38px] 2xl:text-[36px] 2xl:leading-[43.88px] lg:text-[24px]"
+                  >
+                    Module 4 : Tools, Setup, Praktek Bikin Konten
+                  </h2>
+                </div>
+              </div>
+              <div class="px-2 mt-5 2xl:ml-7 lg:mt-0 2xl:mt-5">
+                <ul
+                  class="list-none font-regular 2xl:text-[20px] 2xl:leading-[30px] lg:text-[16px] lg:leading-[28px]"
+                >
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Persiapan & Tools Bikin Konten Video Menarik
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Praktek langsung Bikin Video Menarik <br />(Menyusun Konsep,
+                    Scripting, Shooting, Editing)
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Tutorial Editing buat Pemula di Capcut
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[310px] rounded-[20px] py-[20px] px-[10px] bg-white mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] my-5 2xl:w-[1336px] 2xl:flex 2xl:h-auto 2xl:p-7 2xl:rounded-[69px] lg:w-[812px] lg:h-auto lg:rounded-[32px] lg:p-[40px]"
+        >
+          <div class="lg:w-[732px] 2xl:w-[1256px] lg:flex lg:gap-4 2xl:mt-4">
+            <div
+              class="w-[289px] h-[162px] rounded-[10px] 2xl:w-[640px] 2xl:h-[360px] px-1 lg:w-[256px] lg:h-[144px]"
+            >
+              <iframe
+                class="w-full 2xl:w-[640px] h-full rounded-[10px]"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                src="https://www.youtube.com/embed/toaoN_8LvuY?si=hn-N3gbl0lERwkkX"
+              ></iframe>
+            </div>
+            <div class="mt-10 2xl:ml-1 lg:w-[456px] 2xl:w-[576px] lg:mt-0">
+              <div class="flex 2xl:mt-0">
+                <div class="my-auto 2xl:m-0 2xl:mt-1 lg:my-0">
+                  <span
+                    class="mx-auto float-left w-[50px] h-[50px] py-3 px-3 mr-4 text-xl font-semibold text-center rounded-full bg-[#FE2858] text-white lg:w-[32px] lg:h-[32px] 2xl:w-[56.87px] 2xl:h-[56.87px] lg:text-[24px] lg:leading-[28.13px] lg:py-1 lg:px-1 2xl:py-4"
+                    >5</span
+                  >
+                </div>
+                <div class="my-auto 2xl:m-0">
+                  <h2
+                    class="text-[20px] font-semibold leading-[24.38px] 2xl:text-[36px] 2xl:leading-[43.88px] lg:text-[24px]"
+                  >
+                    Module 5 & 6 : Strategi Beriklan & Live Shopping Rame
+                  </h2>
+                </div>
+              </div>
+              <div class="px-2 mt-5 2xl:ml-7 lg:mt-0 2xl:mt-5">
+                <ul
+                  class="list-none font-regular 2xl:text-[20px] 2xl:leading-[30px] lg:text-[16px] lg:leading-[28px]"
+                >
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Strategi Beriklan di Tiktok
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Menentukan Jenis Iklan & Target Iklan
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Pengenalan & Tools Persiapan Live Shopping
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Strategi Live Menarik Penonton Rame & Penjualan Tinggi
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-[310px] rounded-[20px] py-[20px] px-[10px] bg-white mx-auto border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] my-5 2xl:w-[1336px] 2xl:flex 2xl:h-auto 2xl:p-7 2xl:rounded-[69px] lg:w-[812px] lg:h-auto lg:rounded-[32px] lg:p-[40px]"
+        >
+          <div class="lg:w-[732px] 2xl:w-[1256px] lg:flex lg:gap-4 2xl:mt-4">
+            <div
+              class="w-[289px] h-[162px] rounded-[10px] 2xl:w-[640px] 2xl:h-[360px] px-1 lg:w-[256px] lg:h-[144px]"
+            >
+              <iframe
+                class="w-full 2xl:w-[640px] h-full rounded-[10px]"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                src="https://www.youtube.com/embed/toaoN_8LvuY?si=hn-N3gbl0lERwkkX"
+              ></iframe>
+            </div>
+            <div class="mt-10 2xl:ml-1 lg:w-[456px] 2xl:w-[576px] lg:mt-0">
+              <div class="flex 2xl:mt-0">
+                <div class="my-auto 2xl:m-0 2xl:mt-1 lg:my-0">
+                  <span
+                    class="mx-auto float-left w-[50px] h-[50px] py-3 px-3 mr-4 text-xl font-semibold text-center rounded-full bg-[#FE2858] text-white lg:w-[32px] lg:h-[32px] 2xl:w-[56.87px] 2xl:h-[56.87px] lg:text-[24px] lg:leading-[28.13px] lg:py-1 lg:px-1 2xl:py-4"
+                    >6</span
+                  >
+                </div>
+                <div class="my-auto 2xl:m-0">
+                  <h2
+                    class="text-[20px] font-semibold leading-[24.38px] 2xl:text-[36px] 2xl:leading-[43.88px] lg:text-[24px]"
+                  >
+                    BARU! Module 7 : Strategi Affiliate di Platform Lain TANPA
+                    Tiktok Shop
+                  </h2>
+                </div>
+              </div>
+              <div class="px-2 mt-5 2xl:ml-7 lg:mt-0 2xl:mt-5">
+                <ul
+                  class="list-none font-regular 2xl:text-[20px] 2xl:leading-[30px] lg:text-[16px] lg:leading-[28px]"
+                >
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Intro: Tiktok Shop Tutup, Gimana Mulai di Shopee Affiliate?
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Potensi & Perbedaan Shopee vs. Tiktok Affiliate
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Cara & Syarat Wajib Daftar Shopee Affiliate
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Strategi Bikin & Share Link Shopee Affiliate buat Menarik
+                    Penjualan di Sosial Media
+                  </li>
+                  <li class="flex m-0 items-top">
+                    <i
+                      class="mr-3 mt-2 fa-solid fa-circle-check text-[#2AF0EA] w-[18px] h-[18px]"
+                    ></i>
+                    Cara Jualan lewat Live di Shopee Affiliate
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Topik End -->
+
+    <!-- Section Benefit Start -->
+    <section id="benefit" class="m-0 bg-white 2xl:p-2 lg:px-[100px]">
+      <div class="container mx-auto">
+        <div class="w-[350px] lg:w-auto text-center mx-auto">
+          <h1
+            class="text-[24px] leading-[29.26px] font-bold 2xl:text-[64px] 2xl:leading-[78.02px] lg:text-[40px] lg:leading-[48.76px] pt-5"
+          >
+            Apa Saja Benefit Yang Kamu Dapat?
+          </h1>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-10 px-[20px]">
+          <div class="mx-auto">
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-video-materi-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-video-materi-mobile.png"
+              alt=""
+            />
+          </div>
+          <div class="mx-auto">
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-tren-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-trend-mobile.png"
+              alt=""
+            />
+          </div>
+          <div class="mx-auto">
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-update-materi-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-update-materi-mobile.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- <div class="flex flex-wrap justify-center gap-4 mt-10 2xl:grid 2xl:grid-rows-1 2xl:grid-flow-col">
+			<div class="w-[335px] 2xl:w-[519px] 2xl:h-[779px] px-7 py-10 rounded-[45px] bg-opacity-15 2xl:row-span-3 border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] lg:w-[402px] lg:pt-[16px] lg:h-auto">
+				<div class="flex items-center">
+					<div>
+						<h3 class="mb-3 text-[20px] font-semibold 2xl:text-[36px] lg:text-[20px]">Video Materi</h3>
+						<p class="my-2 font-semibold text-[16px] italic 2xl:text-[20px] lg:text-[14px]">Senilai Rp. 1.305.000,-</p>
+						<p class="mt-5 text-[13px] text-start 2xl:text-start 2xl:text-[16px] lg:text-[14px]">
+							Kamu akan belajar lewat Video Materi yang bisa kamu download. Tenang aja, kamu gaakan belajar sendirian karena ada Grup Bimbingan dan Live Review Akun & QnA lewat Zoom!
+						</p>
+						<div class="mt-24">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit1.png" class="w-[270px] h-[158.92px] 2xl:w-[451px] 2xl:h-[265.45px]" alt="Benefit 1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="w-[335px] h-[800px] 2xl:w-[705px] 2xl:h-[439px] px-7 py-10 rounded-[45px] bg-opacity-15  border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] lg:w-[402px] lg:pt-[16px] lg:h-[370px]">
+					<div class="flex h-[350px]">
+						<div class="2xl:w-1/2 lg:w-[207.96px]">
+							<div class="-mt-38">
+								<h3 class="mb-3 text-[20px] font-semibold 2xl:text-[36px] lg:text-[20px] capitalize">Info Tren Affiliate</h3>
+								<p class="my-1 font-semibold text-[16px] italic 2xl:text-[20px] lg:text-[14px]">Senilai Rp. 290.000,- / hari</p>
+							</div>
+							<div class="text-[13px] 2xl:text-start 2xl:text-[16px]">
+								<p class="mt-1">
+									Ga punya banyak waktu untuk riset tren produk affiliate dan tren konten yang lagi naik?
+									<br><br>
+									Tenang saja karena kita akan sering update di grup seputar :
+								</p>
+								<ul class="mx-auto ml-5">
+									<li class="list-disc">Produk affiliate yang lagi tren</li>
+									<li class="list-disc">Tren Konten yang lagi Naik di sosial media</li>
+									<li class="list-disc">Sound/challenge yang lagi Viral (terutama untuk Reels & Tiktok)</li>
+								</ul>
+							</div>
+							<div class="mx-auto my-auto mt-7 2xl:hidden lg:hidden">
+								<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit2.png" class="w-[70%] mx-auto" alt="Benefit 2">
+							</div>
+						</div>
+						<div class="hidden mt-5 lg:block lg:mx-auto 2xl:hidden">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit2.png" class="w-[170px] lg:w-[114.04px] mx-auto my-auto" alt="Benefit 2">
+						</div>
+						<div class="hidden mt-5 2xl:block lg:mx-auto 2xl:mx-auto 2xl:mb-10">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit2.png" class="w-[170px] lg:w-[177.17px] mx-auto my-auto" alt="Benefit 2">
+						</div>
+					</div>
+				</div>
+				<div class="w-[335px] 2xl:w-[705px] 2xl:h-[317px] px-7 py-10 rounded-[45px] bg-opacity-15  border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] lg:w-[402px] lg:h-auto mt-3 lg:pt-[16px]">
+					<div class="flex items-center">
+						<div class="2xl:w-1/2 lg:w-[159.56px]">
+							<h3 class="mb-3 text-[20px] font-semibold 2xl:text-[36px] lg:text-[20px]">Update Materi</h3>
+							<p class="mt-5 text-[13px] text-start 2xl:text-start 2xl:text-[16px] lg:text-[14px] lg:mt-3">Sekali daftar, seterusnya kamu akan selalu dapat
+								update materi terbaru sesuai
+								perkembangan
+								sosial media
+								secara GRATIS
+							</p>
+							<div class="my-auto mt-5 2xl:hidden lg:hidden">
+								<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit3.png" class="w-50" alt="Benefit 3">
+							</div>
+						</div>
+						<div class="hidden my-auto mx-auto mt-7 ml-5 2xl:w-1/2 lg:w-[162.44px] lg:block 2xl:hidden">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit3.png" class="w-50 lg:w-[162.44px]" alt="Benefit 3">
+						</div>
+						<div class="hidden my-auto mx-auto mt-7 ml-5 2xl:w-1/2 lg:w-[162.44px] lg:hidden 2xl:block">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit3.png" class="w-50 2xl:w-[375px]" alt="Benefit 3">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+      </div>
+    </section>
+    <!-- Section Benefit End -->
+    <!-- Section Mentoring Start -->
+    <section id="mentoring" class="-mt-1 bg-white p-7 lg:px-[100px]">
+      <div class="container mx-auto">
+        <div
+          class="px-5 text-center 2xl:px-20 lg:w-[824px] mx-auto 2xl:w-auto lg:px-0"
+        >
+          <h1
+            class="text-[24px] mx-auto leading-[29.26px] font-bold 2xl:text-[44px] 2xl:leading-[53.64px] lg:text-[40px] lg:leading-[48.76px]"
+          >
+            Setelah Bergabung, kamu gak akan belajar sendirian karena di SYCA
+            ada...
+          </h1>
+        </div>
+        <div
+          class="flex flex-wrap justify-center w-full gap-4 mt-10 lg:w-[824px] 2xl:w-auto mx-auto"
+        >
+          <div>
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-live-review-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-live-review-mobile.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-grup-tele-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-grup-tele-mobile.png"
+              alt=""
+            />
+          </div>
+          <!-- <div class="w-[335px] px-7 py-10 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] 2xl:w-[567px] lg:w-[362.5px] lg:h-auto">
+				<div class="flex items-center">
+					<div>
+						<h3 class="text-[20px] leading-[24.38px] font-bold  2xl:text-[36px] 2xl:leading-[42.69px] 2xl:text-start">Live
+							Review Akun & QnA dengan Mentor</h3>
+						<p class="my-2 font-semibold text-[16px] italic 2xl:text-[20px] lg:text-[14px] 2xl:hidden">Senilai Rp. 1.015.000,-</p>
+						<p class="mt-5 text-[13px] 2xl:text-start 2xl:text-[16px]">
+							Kamu bisa minta dibedah langsung oleh Mentor, untuk diberi masukan dan evaluasi sesuai kondisi akun sosmed-mu
+							<br><br>
+							Di Sesi ini juga SYCA sering undang Guest Expert untuk sharing ilmu dan rahasia mereka dari titik nol sampai ke titik
+							viral, banyak followers, dan mencapai hidup impian mereka dari konten
+						</p>
+						<div class="mx-auto my-auto mt-7">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit4.png" class="w-full 2xl:w-[90%] mx-auto" alt="Benefit 1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-[659px] px-7 py-10 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] 2xl:w-[659px] lg:w-[402.5px]">
+				<div class="flex items-center">
+					<div>
+						<h3 class="text-[20px] leading-[24.38px] font-bold  2xl:text-[36px] 2xl:leading-[42.69px] 2xl:text-start">Grup
+							Bimbingan</h3>
+						<p class="mt-5 text-[13px]  2xl:text-start 2xl:text-[16px]">
+							Kamu juga ga akan belajar sendirian, ada grup bimbingan dimana ada Team Expert SYCA yang standby menjawab beserta
+							teman-teman kreator berpengalaman lainnya untuk menambah networkingmu
+						</p>
+						<div class="mx-auto mt-7">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit5.png" class="mx-auto w-full 2xl:w-[372px] lg:w-[227.88px]" alt="Benefit 1">
+						</div>
+					</div>
+				</div>
+			</div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Section Mentoring End -->
+    <!-- Section Extra Bonus Start -->
+    <section id="extra_bonus" class="m-0 bg-white p-7 lg:px-[100px]">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1
+            class="text-[24px] mx-auto leading-[29.26px] font-bold 2xl:text-[64px] 2xl:leading-[78.02px] lg:text-[40px] lg:leading-[48.76px]"
+          >
+            Extra Bonus
+          </h1>
+          <p class="text-[20px] italic 2xl:text-[27px] lg:font-semibold">
+            Senilai Rp. 290.000,-
+          </p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4 mt-10">
+          <div>
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-headline-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-headline-mobile.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="hidden lg:block"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-calendar-new.png"
+              alt=""
+            />
+            <img
+              class="lg:hidden"
+              src="https://startyourcontentacademy.com/assets/img/affiliate-calendar-mobile.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://startyourcontentacademy.com/assets/img/affiliate-sertifikat-new.png"
+              alt=""
+            />
+          </div>
+          <!-- <div class="w-full px-7 py-10 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] 2xl:w-[408px] 2xl:h-[600px] lg:w-[261.33px] lg:rounded-[45px] lg:h-[449px] lg:py-[30px] lg:px-[20px]">
+				<div class="flex items-center">
+					<div>
+						<h3 class="text-[20px] leading-[24.38px] font-bold 2xl:text-[36px] 2xl:leading-[42.69px] 2xl:text-start lg:font-semibold">Template
+							Headline Menarik</h3>
+						<p class="mt-5 text-[13px] 2xl:text-start 2xl:text-[16px]">Kumpulan template headline yang udah terbukti bisa
+							menghasilkan Jutaan Views di
+							akun
+							member SYCA dan
+							terbukti memicu emosi yang bikin penonton klik (penasaran, FOMO, senang, bingung, dsb)</p>
+						<div class="my-auto mt-5">
+							<img src="https://startyourcontentacademy.com/assets/img/extrabonus1.png" class="w-full mx-auto 2xl:w-[383px] 2xl:h-[289px]" alt="Benefit 1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-full px-7 py-10 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] 2xl:w-[408px] 2xl:h-[600px] lg:w-[261.33px] lg:rounded-[45px] lg:h-[449px] lg:py-[30px] lg:px-[20px]">
+				<div class="flex items-center">
+					<div>
+						<h3 class="text-[20px] leading-[24.38px] font-bold 2xl:text-[36px] 2xl:leading-[42.69px] 2xl:text-start lg:font-semibold">Content
+							Calendar</h3>
+						<p class="mt-5 text-[13px] 2xl:text-start 2xl:text-[16px]">50+ ide konten (lebih dari 1 bulan) yang tinggal kamu
+							masukkan dan atur dalam
+							kalender
+							konten yang sudah
+							disediakan sesuai keinginan kamu.</p>
+						<div class="my-auto mt-5">
+							<img src="https://startyourcontentacademy.com/assets/img/extrabonus2.png" class="w-full mx-auto 2xl:w-[383px] 2xl:h-[289px] lg:w-[252px] lg:my-auto" alt="Benefit 1">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="w-full px-7 py-10 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] 2xl:w-[408px] 2xl:h-[600px] lg:w-[261.33px] lg:rounded-[45px] lg:h-[449px] lg:py-[30px] lg:px-[20px]">
+				<div class="flex items-center">
+					<div>
+						<h3 class="text-[20px] leading-[24.38px] font-bold 2xl:text-[36px] 2xl:leading-[42.69px] 2xl:text-start lg:font-semibold">
+							Sertifikat Keikutsertaan</h3>
+						<p class="mt-5 text-[13px] 2xl:text-start 2xl:text-[16px]">
+							Yang bisa kamu dapatkan setelah mengikuti semua sesi Webinar, langsung praktek dan Submit Hasilnya!
+						</p>
+						<div class="my-auto mt-5">
+							<img src="https://startyourcontentacademy.com/assets/img/affiliate-extrabonus.png" class="w-full mx-auto 2xl:w-[383px] 2xl:h-[289px] lg:w-[211.25px] lg:h-[149.72px]" alt="Benefit 1">
+						</div>
+					</div>
+				</div>
+			</div> -->
+        </div>
+      </div>
+    </section>
+    <!-- Section Extra Bonus End -->
+    <!-- Section Extra Bonus Start -->
+    <section id="extra_bonus" class="m-0 p-7 lg:px-[100px]">
+      <div class="container mx-auto">
+        <div class="lg:w-[824px] 2xl:w-auto lg:mx-auto">
+          <div class="text-center 2xl:px-20">
+            <h1
+              class="text-[24px] font-bold leading-[29.26px] text-white 2xl:text-[64px] 2xl:leading-[78.02px] lg:text-[40px] lg:leading-[48.76px]"
+            >
+              Daftar Sekarang dan Akses Semua Fasilitas ini SEUMUR HIDUP :
+            </h1>
+          </div>
+          <div
+            class="flex flex-wrap justify-center gap-4 mt-10 2xl:w-[1336px] 2xl:mx-auto"
+          >
+            <!-- <div class="w-full p-8 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] 2xl:w-[42%] bg-white lg:w-[392px] 2xl:h-auto">
+					<ul class="text-[13px] 2xl:text-[27px] 2xl:leading-[28px]">
+						<li class="flex my-2 items-top 2xl:my-5"><i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>5+ Modul & BONUS
+							UPDATE Materi
+							FREE
+							Seterusnya tanpa tambah biaya lagi</li>
+						<li class="flex my-2 items-top 2xl:my-5"><i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>Modul PDF Tugas/
+							Ebook
+							Panduan</li>
+						<li class="flex my-2 items-top 2xl:my-5"><i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>Grup Bimbingan Aktif
+							Untuk Konsul
+							bersama Tim
+							Expert</li>
+						<li class="flex my-2 items-top 2xl:my-5"><i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>Live Zoom Bulanan
+							Rutin 2x /bulan
+							bersama Tim Expert</li>
+						<li class="flex my-2 items-top 2xl:my-5"><i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>Dapat Update
+							info(topik, musik &
+							tren) untuk IDE
+							konten setiap hari</li>
+					</ul>
+				</div>
+				<div class="w-full p-8 rounded-[45px] bg-opacity-15 bg-transparent 2xl:w-1/3 2xl:h-auto lg:w-[392px] lg:h-[320px] hidden lg:block ">
+					<div class="mt-0">
+						<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit6.png" class="w-full mx-auto -mt-10 lg:w-[320px] lg:h-[320px] 2xl:w-full 2xl:h-full" alt="Benefit 1">
+					</div>
+				</div>
+				<div class="w-full p-8 rounded-[45px] border-4 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] lg:w-[392px] bg-white 2xl:w-[42%] 2xl:h-[430px]">
+					<h3 class="font-bold text-[20px] mx-auto text-center 2xl:text-[32px] 2xl:m-0 lg:text-start">Extra Bonus</h3>
+					<ul class="text-[13px] 2xl:text-[27px] 2xl:leading-[28px]">
+						<li class="flex my-2 items-top 2xl:my-5">
+							<i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>
+							Template Headline Menarik (E-book Template )
+						</li>
+						<li class="flex my-2 items-top 2xl:my-5">
+							<i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>
+							50+ Ide Konten buat dipakai tiap harinya dalam 1 bulan (Content Calendar)
+						</li>
+						<li class="flex my-2 items-top 2xl:my-5">
+							<i class="mt-2 mr-3 fa-solid fa-circle-check text-primary"></i>
+							Social Media Checklist :
+							Instagram &
+							YouTube
+						</li>
+					</ul>
+				</div>
+				<div class="w-full rounded-[45px] bg-opacity-15 bg-transparent 2xl:w-1/3 lg:hidden">
+					<div class="my-auto mt-5">
+						<img src="https://startyourcontentacademy.com/assets/img/affiliate-benefit6.png" class="w-[325px] h-[325px] mx-auto 2xl:w-[497.24px] 2xl:h-[508px]" alt="Benefit Terakhir">
+					</div>
+				</div> -->
+            <div>
+              <img
+                class="hidden lg:block"
+                src="https://startyourcontentacademy.com/assets/img/affiliate-extra-bonus-new-revisi.png"
+                class=""
+                alt="Benefit Terakhir"
+              />
+              <img
+                class="lg:hidden"
+                src="https://startyourcontentacademy.com/assets/img/affiliate-extra-bonus-mobile.png"
+                class=""
+                alt="Benefit Terakhir"
+              />
+            </div>
+            <div
+              class="w-full rounded-[45px] bg-opacity-15 bg-transparent 2xl:w-1/3"
+            >
+              <div class="mx-auto 2xl:w-[505px] 2xl:h-[542px]">
+                <h3
+                  class="text-[16px] font-semibold text-center text-white lg:text-[24px] 2xl:text-[24px]"
+                >
+                  Mas Adli sudah investasi >Rp 10.000.000 untuk belajar
+                  Affiliate Marketing + trial error Riset Algoritma,
+                  <br />
+                  Kabar baiknya kamu ga perlu lewati itu, cukup investasi
+                  sebesar :
+                </h3>
+
+                <p
+                  class="text-[40px] font-semibold text-center text-white line-through mt-3 2xl:mt-3 lg:text-[32px] 2xl:text-[40px]"
+                >
+                  Rp. 2.980.000
+                </p>
+                <h3
+                  class="text-[16px] 2xl:text-[24px] font-semibold text-center text-white mt-3 lg:text-[24px]"
+                >
+                  Diskon Spesial buat kamu yang Daftar
+                  <span class="text-primary_affiliate">HARI INI :</span>
+                </h3>
+                <p
+                  class="text-[40px] font-semibold text-center text-[#AEFFF4] mt-3 lg:text-[32px] 2xl:text-[40px]"
+                >
+                  Rp. 298.000
+                </p>
+                <div class="mx-auto mt-2">
+                  <button
+                    onclick="openBundleModal()"
+                    class="block w-[290px] h-[54px] rounded-[40px] p-3 mx-auto text-white text-semibold bg-[#FE2858] btn btn-primary uppercase font-bold lg:w-[267px] 2xl:w-[329px]"
+                  >
+                    Daftar Sekarang
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Extra Bonus End -->
+    <!-- Kisah Part 2 Start -->
+    <section id="kisah" class="p-5 mt-4 bg-white lg:px-[100px]">
+      <div class="container mx-auto">
+        <div class="lg:w-[664px] 2xl:w-auto lg:mx-auto">
+          <h3
+            class="text-[15px] font-bold text-center mx-auto leading-[18.29px] 2xl:text-[44px] 2xl:leading-[53.64px] 2xl:font-normal lg:font-normal lg:text-[24px]"
+          >
+            #KisahSuksesSYCA
+          </h3>
+          <h1
+            class="text-[16px] font-bold mx-auto text-center leading-[29.26px] mt-3 capitalize 2xl:text-[72px] 2xl:leading-[87.77px] lg:text-[36px] lg:leading-[43.88px]"
+          >
+            Cerita Perubahan Luar Biasa dari Member- member yang sudah Bergabung
+            :
+          </h1>
+        </div>
+
+        <div class="relative 2xl:w-[1128px] mx-auto lg:w-[824px]">
+          <div
+            class="flex justify-center gap-1 p-5 mt-5 overflow-hidden cerita-slider-affiliate"
+          >
+            <!-- <div class="slide rounded-[45px] shadow-lg overflow-hidden"> -->
+            <!-- <div class="bg-white rounded-[45px] py-7 border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] shadow-lg px-7 w-full h-full mx-auto lg:rounded-[64px] lg:px-10"> -->
+            <!-- <div class="bg-white rounded-[45px] py-7 border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] shadow-lg px-7 w-full h-full mx-auto lg:rounded-[64px] lg:px-10""> -->
+            <div class="overflow-hidden slide">
+              <img
+                class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[50px] drop-shadow-xl border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                src="https://admin.startyourcontentacademy.com/sitefiles/testimony/kangsyarif.png"
+                alt="Foto"
+              />
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="slide rounded-[45px] shadow-lg overflow-hidden"> -->
+            <!-- <div class="bg-white rounded-[45px] py-7 border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] shadow-lg px-7 w-full h-full mx-auto lg:rounded-[64px] lg:px-10"> -->
+            <!-- <div class="bg-white rounded-[45px] py-7 border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] shadow-lg px-7 w-full h-full mx-auto lg:rounded-[64px] lg:px-10""> -->
+            <div class="overflow-hidden slide">
+              <img
+                class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[50px] drop-shadow-xl border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                src="https://admin.startyourcontentacademy.com/sitefiles/testimony/FIX_SYCA_-_Testimoni_Box21.png"
+                alt="Foto"
+              />
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- <div class="slide rounded-[45px] shadow-lg overflow-hidden"> -->
+            <!-- <div class="bg-white rounded-[45px] py-7 border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] shadow-lg px-7 w-full h-full mx-auto lg:rounded-[64px] lg:px-10"> -->
+            <!-- <div class="bg-white rounded-[45px] py-7 border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA] shadow-lg px-7 w-full h-full mx-auto lg:rounded-[64px] lg:px-10""> -->
+            <div class="overflow-hidden slide">
+              <img
+                class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[50px] drop-shadow-xl border-8 border-[#2AF0EA] border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+                src="https://admin.startyourcontentacademy.com/sitefiles/testimony/samira2.png"
+                alt="Foto"
+              />
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+          <div
+            class="absolute inset-0 flex items-center justify-between w-full -translate-y-1/2 2xl:px-7 slider-controls top-1/2"
+          >
+            <button
+              class="px-3 py-1 -mx-4 bg-transparent border rounded-full shadow-lg 2xl:mx-0 2xl:w-[71px] 2xl:h-[71px] 2xl:text-2xl border-primary prev-cerita-slider-affiliate"
+            >
+              <i class="fa-solid fa-angle-left text-primary"></i>
+            </button>
+            <button
+              class="px-3 py-1 -mx-4 bg-transparent border rounded-full shadow-lg 2xl:mx-0 2xl:w-[71px] 2xl:h-[71px] 2xl:text-2xl border-primary next-cerita-slider-affiliate"
+            >
+              <i class="fa-solid fa-angle-right text-primary"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Kisah Part 2 End -->
+    <!-- Section FAQ Start -->
+    <section id="faq" class="p-5 lg:px-[100px] bg-white">
+      <div class="container mx-auto">
+        <h1
+          class="text-[36px] 2xl:mx-10 2xl:text-[72px] 2xl:leading-[79px] lg:text-[42px] font-bold leading-10 text-center lg:leading-[79px]"
+        >
+          Pertanyaan Yang Sering Diajukan :
+        </h1>
+        <div class="mt-7">
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apakah course ini cocok untuk pemula?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Yes, karena course ini khusus dibuat dari level yang paling
+              pemula/belum punya ide konten sampai yang Expert dengan bahasa
+              yang gampang dimengerti (ga pake istilah rumit2). Ditambah ada
+              Grup Eksklusif Tanya Jawab ke saya dan creators lainnya seandainya
+              ada kesulitan.
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apa benar akan dibimbing langsung?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Yes, setelah belajar materinya kamu bisa bertanya2 di Grup
+              Eksklusif yang langsung dijawab oleh saya sendiri dan Creators
+              lainnya. Ditambah tiap bulan ada 2x Live dimana kamu bisa ajuin
+              akunmu buat direview (dan saya sering hadirkan Special Guest juga
+              yang akan membagikan materi eksklusif buatmu :)
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apakah cocok untuk Bisnis Online & Jualan?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Cocok, terutama kalo kamu mau bikin kontenmu menarik Followers
+              organik di sosmed, bangun rasa percaya, dan dari situ ubah mereka
+              jadi Client/Customermu Note : disini tidak diajarkan ngiklan, tips
+              closing, dsb, tapi Fokus ke Konten. Materinya bisa kamu pakai
+              untuk bikin konten iklan dan jualanmu menarik.
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">Apakah cocok untuk Kreator?</p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Yes cocok, disini diajarin dari ga punya ide konten, sampai bisa
+              punya personal brand dari bikin konten yang menarik. Ditambah,
+              disini juga bisa belajar cara Menghasilkan dari jadi konten
+              kreator dan bangun bisnis di sosmed (ubah followers jadi clientmu)
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Akses Coursenya berlaku berapa lama?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Sekali daftar kamu sudah dapat akses SEUMUR HIDUP ke materi2 dalam
+              course ini. Jadi bisa kamu akses kapanpun, dan pelajari ulang
+              tanpa kuatir kendala waktu.
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Jadwal Saya padat, apa tetap bisa ikut course ini?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Bisa banget, justru course ini dirancang sekali daftar sudah dapat
+              akses Seumur Hidup supaya bisa ditonton ulang kapanpun dan kamu
+              juga bisa bertanya kapanpun di Grup Eksklusifnya :) Note : Saranku
+              tetap ikuti jadwal Live/bulannya biar hasil belajarmu maksimal ya.
+              Tenang, selalu kita kabarin H-3 sebelom Live kok :)
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+          <div class="flex justify-between px-3 py-7 group-faq">
+            <button
+              class="flex 2xl:text-[27px] justify-between w-full text-sm capitalize toggle-btn text-start lg:text-base"
+            >
+              <p class="ml-0 font-semibold">
+                Apakah coursenya bisa diakses dari HP?
+              </p>
+              <i class="mt-1 fas fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="hidden px-3 my-7">
+            <p class="2xl:text-[24px]">
+              Bisa banget, materinya bisa diakses via HP dan untuk prakteknya
+              sendiri tidak butuh laptop/PC, cukup modal HP sudah bisa bikin
+              konten menarik
+            </p>
+          </div>
+          <hr class="w-full mx-auto border-black border-1" />
+        </div>
+      </div>
+    </section>
+    <!-- Section FAQ End -->
+
+    <div class="buy-overlay-modal" style="display: none">
+      <div
+        class="buy-modal border-4 border-t-[#FE2858] border-l-[#FE2858] border-b-[#2AF0EA] border-r-[#2AF0EA]"
+      >
+        <img
+          class="mx-auto"
+          src="https://startyourcontentacademy.com/assets/img/affiliate/1.png"
+        />
+        <div class="text-[16px] text-center mt-4">
+          Sebelum kamu checkout aku mau memastikan nih,
+        </div>
+        <h2 class="lg:text-[22px] text-[20px] font-bold text-center">
+          Apa kamu sudah pernah Beli
+          <span class="text-primary_affiliate">14 Days Winning Content</span>
+          Sebelumnya?
+        </h2>
+        <br />
+        <div class="text-[16px] text-center">
+          Karena kalau belum, aku punya
+          <b class="text-primary_affiliate">Penawaran Spesial</b> untukmu dan
+          ini hanya <b class="text-primary_affiliate">berlaku 1 kali...</b>
+        </div>
+
+        <div
+          class="flex justify-center gap-4 mx-auto"
+          style="margin-top: 40px; width: 100%"
+        >
+          <a
+            href="course2.html"
+            class="uppercase text-center font-semibold text-white rounded-[40px] py-[13px] px-[12px] bg-[#FE2858] hover:opacity-80 uppercase text-[12px] my-1 lg:py-[11px] lg:text-[20px]"
+            style="width: 100%"
+            >BELUM PERNAH</a
+          >
+        </div>
+        <div
+          class="flex justify-center gap-4 mx-auto"
+          style="margin-bottom: 50px; margin-top: 20px; width: 100%"
+        >
+          <a
+            href="course2.html"
+            class="uppercase text-center font-semibold rounded-[40px] py-[12px] px-[18px] bg-transparent border border-primary_affiliate text-primary_affiliate hover:opacity-80 uppercase text-[12px] my-1 lg:py-[11px] lg:text-[20px]"
+            style="width: 100%"
+            >Sudah Jadi Member<br />14 Days Winning Content</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const openBundleModal = () => {
+        $(".buy-overlay-modal").show();
+      };
+
+      $(".kisah-slider-affiliate").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: false,
+        prevArrow: $(".prev-kisah-slider-affiliate"),
+        nextArrow: $(".next-kisah-slider-affiliate"),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      $(".cerita-slider-affiliate").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        prevArrow: $(".prev-cerita-slider-affiliate"),
+        nextArrow: $(".next-cerita-slider-affiliate"),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      const show_full_description = (elem) => {
+        $(elem).siblings(".text-full").show();
+        $(elem).siblings(".text-short").hide();
+        $(elem).hide();
+      };
+    </script>
+    <!-- Footer Start -->
+    <footer class="bg-[#353535] bottom-0 w-full text-white pb-6 lg:px-10">
+      <div class="lg:justify-between lg:flex">
+        <div class="p-5">
+          <a href="index.html"
+            ><img
+              class="w-[110px] lg:w-[189px] lg:h-[116px]"
+              src="https://startyourcontentacademy.com/assets/img/logo-footer.png"
+              alt=""
+          /></a>
+          <p class="mt-5">
+            Helping people build and grow their brand through social media
+            content.
+          </p>
+
+          <div class="mt-5 md:hidden lg:hidden">
+            <h3>Cara Menggunakan:</h3>
+            <a href="tutorial.html" class="pt-3 text-lg"
+              ><i class="fa-solid fa-person-chalkboard text-primary"></i>
+              Tutorial</a
+            >
+          </div>
+
+          <h6 class="mt-5 font-semibold">Whatsapp: +62 813-7419-2252</h6>
+          <h6 class="font-semibold">Email: info@syca.com</h6>
+        </div>
+        <div class="p-5">
+          <h3>Kunjungi Social Media Kami</h3>
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/syca" target="_blank"
+              ><img
+                class="h-[50px] w-[50px]"
+                src="https://startyourcontentacademy.com/assets/img/icon/ig.png"
+                alt=""
+            /></a>
+            <a href="https://www.tiktok.com/@syca" target="_blank"
+              ><img
+                class="h-[50px] w-[50px]"
+                src="https://startyourcontentacademy.com/assets/img/icon/tiktok.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="hidden mt-5 lg:block">
+            <h3>Cara Menggunakan:</h3>
+            <a href="tutorial.html" class="pt-3 text-lg"
+              ><i class="fa-solid fa-person-chalkboard text-primary"></i>
+              Tutorial</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Sticky Button Start -->
+    <div
+      class="fixed -bottom-1 w-full p-4 bg-black bg-opacity-[80%] shadow-lg md:hidden lg:hidden xl:hidden group"
+      style="z-index: 100"
+    >
+      <div class="w-1/2 mx-auto">
+        <a
+          onclick="openBundleModal()"
+          class="block mx-auto py-3 px-3 text-[14px] text-white rounded-full bg-primary_affiliate hover:opacity-80 lg:w-[290px] lg:h-[54px] text-center uppercase font-bold group-hover:animate-bounce"
+          >Daftar Sekarang</a
+        >
+      </div>
+    </div>
+    <!-- Sticky Button End -->
+
+    <script src="https://startyourcontentacademy.com/assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script>
+      function logout() {
+        Swal.fire({
+          title: "Are you sure?",
+          text: "You will be logged out!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonText: "yes",
+          denyButtonText: `no`,
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            $.ajax({
+              url: "https://startyourcontentacademy.com/sign_in/logout",
+              type: "GET",
+              dataType: "JSON",
+              async: true,
+              success: function (response) {
+                location.reload();
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                ajaxErrRes(jqXHR, textStatus, errorThrown);
+              },
+            });
+          }
+        });
+      }
+    </script>
+    <!-- Konten lainnya -->
+    <div class="rn-progress-parent contentPc rn-backto-top-active">
+      <svg
+        class="rn-back-circle svg-inner"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 174.047;
+          "
+        ></path>
+      </svg>
+    </div>
+
+    <script>
+      // Scroll event listener
+      window.addEventListener("scroll", function () {
+        const scrollButton = document.querySelector(".rn-progress-parent");
+        if (window.scrollY > 200) {
+          scrollButton.classList.add("rn-backto-top-active");
+        } else {
+          scrollButton.classList.remove("rn-backto-top-active");
+        }
+      });
+
+      // Event click untuk scroll ke atas
+      document
+        .querySelector(".rn-progress-parent")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      window.addEventListener("scroll", function () {
+        const scrollButton = document.querySelector(".rn-progress-parent");
+        const progressPath = document.querySelector(
+          ".rn-progress-parent svg path"
+        );
+
+        // Total panjang lintasan lingkaran (perhitungan SVG)
+        const pathLength = progressPath.getTotalLength();
+
+        // Hitung posisi scroll
+        const scrollTop = window.scrollY;
+        const documentHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / documentHeight) * pathLength;
+
+        // Update stroke-dashoffset berdasarkan progress
+        progressPath.style.strokeDasharray = `${pathLength}, ${pathLength}`;
+        progressPath.style.strokeDashoffset = pathLength - progress;
+
+        // Tampilkan atau sembunyikan tombol berdasarkan posisi scroll
+        if (scrollTop > 200) {
+          scrollButton.classList.add("rn-backto-top-active");
+        } else {
+          scrollButton.classList.remove("rn-backto-top-active");
+        }
+      });
+    </script>
+  </body>
+</html>

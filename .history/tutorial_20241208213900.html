@@ -1,0 +1,327 @@
+
+<!doctype html>
+<html>
+
+<head>
+	<title>SYCA | Online Education Platform</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Tambahkan Tailwind CSS -->
+	<link href="https://startyourcontentacademy.com/assets/css/tailwind/style.min.css" rel="stylesheet">
+	<!-- <link href="https://startyourcontentacademy.com/assets/css/tailwind/output.css" rel="stylesheet"> -->
+	<!-- font -->
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="https://startyourcontentacademy.com/assets/template/images/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+	<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://startyourcontentacademy.com/assets/css/custom.css?version=241124-125947">
+			<style>
+		/* Tambahkan gaya khusus untuk latar belakang */
+		.bg-custom {
+			background-image: url('https://startyourcontentacademy.com/assets/img/bg.svg');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.bg-custom-home {
+			background-image: url('https://startyourcontentacademy.com/assets/img/bg_home.svg');
+			background-size: cover;
+			background-position: center;
+		}
+
+		.video-wrapper iframe
+		{
+			max-width: 100%;
+		}
+	</style>
+	<!-- Meta Pixel Code -->
+	<script>
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '800225455535758');
+		fbq('track', 'PageView');
+	</script>
+	<noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=800225455535758&ev=PageView&noscript=1" />
+	</noscript>
+	<!-- End Meta Pixel Code -->
+</head>
+
+
+<body class="font-['Montserrat'] bg-custom">
+<!-- header start -->
+<header class="absolute top-0 left-0 z-10 flex items-center w-full px-5 mb-10 bg-transparent lg:p-0">
+	<div class="container mx-auto">
+		<div class="relative flex items-center justify-between">
+			<div class="px-4">
+				<a href="https://startyourcontentacademy.com/" class="block py-6 text-lg font-bold text-primary"><img src="https://startyourcontentacademy.com/assets/img/logo-dark.svg" alt="Logo"></a>
+			</div>
+			<div class="flex items-center px-4">
+									<a href="https://startyourcontentacademy.com/course#allCourse" class="mr-6 text-2xl cursor-pointer lg:hidden text-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+								<a href="https://wa.me/+6281374192252" target="_blank" class="mr-12 text-2xl cursor-pointer text-primary lg:hidden"><i class="fa-brands fa-whatsapp"></i></a>
+				<button id="hamburger" name="hamburger" type="button" class="absolute block right-4 lg:hidden">
+					<span class="transition duration-300 origin-top-left hamburger-line"></span>
+					<span class="transition duration-300 hamburger-line"></span>
+					<span class="transition duration-300 origin-bottom-left hamburger-line"></span>
+				</button>
+
+				<nav id="nav-menu" class="absolute hidden py-5 bg-white rounded-lg shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+					<ul class="block lg:flex">
+						<li class="group">
+							<a href="index.html" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary ">Beranda</a>
+						</li>
+						<li class="group">
+							<a href="kelas.html" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary ">Kelas</a>
+						</li>
+						<!-- Tambahkan rute untuk testimoni di routes.php CodeIgniter -->
+						<li class="group">
+							<a href="testimoni.html" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary">Testimoni</a>
+						</li>
+						<li class="group">
+							<a href="https://startyourcontentacademy.com/instruction" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary font-bold outline-emerald-700">Tutorial</a>
+						</li>
+						<li class="group">
+							<a href="https://startyourcontentacademy.com/instruction/access_problem" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary ">Kendala Akses</a>
+						</li>
+						<!-- <li class="hidden group lg:block md:hidden">
+							<div class="relative py-1 mx-4">
+								<input type="text" class="relative w-64 h-8 px-4 py-2 text-base rounded-xl top-37 left-734 ring-1 ring-slate-800 focus:ring-2 focus:outline-none" id="search_val">
+								<i class="absolute right-0 mr-4 text-base transform -translate-y-1/2 top-1/2 text-slate-600 fa-solid fa-magnifying-glass"></i>
+							</div>
+						</li> -->
+													<!-- Tambahkan rute untuk login di routes.php CodeIgniter -->
+							<li class="group lg:hidden">
+								<a href="https://startyourcontentacademy.com/sign_in?bool=true" class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary">Login</a>
+							</li>
+											</ul>
+				</nav>
+			</div>
+			<div class="hidden px-4 lg:block">
+				<a href="https://wa.me/+6281374192252" target="_blank" class="mr-5 text-2xl cursor-pointer text-primary"><i class="fa-brands fa-whatsapp"></i></a>
+									<a href="https://startyourcontentacademy.com/course#allCourse" class="mr-6 text-2xl cursor-pointer text-primary"><i class="fa-solid fa-cart-shopping"></i></a>
+				
+									<a href="https://startyourcontentacademy.com/sign_in?bool=true" class="py-4 px-4 text-base text-white rounded-[20px] bg-primary hover:opacity-80 lg:w-[75px] lg:px-8 lg:h-[20px] text-center login_logout_button">Login</a>
+							</div>
+		</div>
+	</div>
+</header>
+<!-- header end -->
+<div class="fixed hidden w-1/2 mx-auto transform -translate-x-1/2 bg-white border-2 left-1/2 p-7 rounded-2xl h-96 border-emerald-700" id="card-result">
+	<div class="h-full overflow-y-auto resultView">
+	</div>
+</div>
+
+<script>
+	$("#search_val").focus(function() {
+		$("#card-result").removeClass('hidden').addClass('block');
+	}).blur(function() {
+		setTimeout(function() {
+			$("#card-result").removeClass('block').addClass('hidden');
+		}, 3000); // 3 detik
+	});
+
+	$("#search_val").keyup(function() {
+		$(".resultView").html('<i class="fa-solid fa-spinner animate-spin"></i>');
+		search();
+	})
+
+	async function search() {
+		let search_val = $("#search_val").val();
+		var url = "https://startyourcontentacademy.com/Api/search?search=" + search_val;
+
+		await $.ajax({
+			url: url,
+			type: "GET",
+			dataType: "JSON",
+			async: true,
+			success: function(response) {
+				$('.resultView').html(response.view);
+			}
+		});
+	}
+</script>
+<!-- hero -->
+<section class="pt-6 mt-32 bg-opacity-30">
+	<div class="container mx-auto">
+		<div class="flex flex-wrap items-center justify-between px-7">
+			<div class="w-full">
+				<h1 class="mb-4 text-5xl font-bold text-center lg:text-6xl">Tutorial</h1>
+				<p class="mb-4 text-xl font-semibold text-center lg:text-2xl">Akses Kelas Syca</p>
+			</div>
+			<!-- <div class="w-1/2">
+				<img src="https://startyourcontentacademy.com/assets/img/banner-kelas-tutor.png" alt="Image" class="hidden mx-auto rounded-lg lg:block">
+			</div> -->
+		</div>
+	</div>
+</section>
+<!-- hero -->
+<!-- body -->
+<section>
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto mt-10">
+			<h2 class="text-lg text-center lg:text-3xl">
+				Simak petunjuk berikut untuk akses kelas yang sudah kamu beli di SYCA :
+			</h2>
+			<p class="text-lg text-center my-7 lg:text-3xl">Untuk tutorial versi videonya silahkan tonton disini:</p>
+			<iframe  class="rounded-3xl aspect-video mx-auto" style="max-width:100%" width="560" height="315" src="https://www.youtube.com/embed/dNSaBeh5eBE?si=9-77Zf-jC01CLSua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<!-- <iframe class="w-[95%] lg:w-[70%] rounded-3xl aspect-video mx-auto" src="https://www.youtube.com/embed/oNHUYnrvu8Y?si=ZMFDORUA5BNYK8w_" allowfullscreen></iframe> -->
+			
+				<p class="text-lg text-center my-7 lg:text-3xl">Ikuti petunjuk yang tertera di video diatas atau bisa mengikuti petunjuk secara tertulis berikut:</p>
+		</div>
+	</div>
+
+	<h1 class="mx-auto mt-20 text-3xl font-bold text-center">CARA AKSES KELAS :</h1>
+
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				1. Pada tampilan mobile, <b>Klik TIGA GARIS</b> atau menu bar (gambar 3 garis) di pojok kanan atas layar lalu pilih <b>LOGIN</b>
+			</h2>
+			<img src="https://startyourcontentacademy.com/assets/images/tutorial/step2.png" alt="Image" class="mx-auto rounded-lg w-[70%] lg:w-[20%]">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				Pada tampilan desktop, klik tombol LOGIN di pojok kanan atas
+			</h2>
+			<img src="https://startyourcontentacademy.com/assets/images/tutorial/Step 1.png" alt="Image" class="mx-auto rounded-lg max-w-[70%]">
+		</div>
+	</div>
+
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				2. Setelah masuk ke halaman  login, masukkan email dan password yang sebelumnya digunakan ketika mendaftar dan klik <b>“Log in”</b>
+			</h2>
+			<img src="https://startyourcontentacademy.com/assets/images/tutorial/Step 2.png" alt="Image" class="mx-auto rounded-lg max-w-[70%]">
+		</div>
+	</div>
+
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				3. Jika lupa password yang digunakan, bisa klik tombol <b>Forget Password</b> dan ikuti petunjuk untuk reset password Anda di email
+			</h2>
+			<img src="https://startyourcontentacademy.com/assets/images/tutorial/Step 3.png" alt="Image" class="mx-auto rounded-lg max-w-[70%]">
+		</div>
+	</div>
+
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				4. Jika berhasil login, kamu akan dialihkan ke halaman Kelas. Klik gambar kelas untuk akses kelas yang sudah kamu beli
+        </span>
+			</h2>
+			<img src="https://startyourcontentacademy.com/assets/images/tutorial/Step 4.png" alt="Image" class="mx-auto rounded-lg max-w-[70%]">
+		</div>
+	</div>
+
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				5. Selamat! Kamu sudah berhasil akses kelas dan tinggal mengikuti petunjuk yang sudah ada dalam modul. Jika masih tidak bisa/berkendala bisa menghubungi admin kami di <a href="https://bit.ly/sycaadminmarissa" style="color:blue;">https://bit.ly/sycaadminmarissa</a>.
+			</h2>
+			<img src="https://startyourcontentacademy.com/assets/images/tutorial/Step 5.png" alt="Image" class="mx-auto rounded-lg max-w-[70%]">
+		</div>
+	</div>
+
+	<div class="container p-5 mx-auto">
+		<div class="mx-auto">
+			<h2 class="mb-10 text-lg text-center lg:text-3xl">
+				Selamat belajar dan #SemangatNgonten! 
+			</h2>
+		</div>
+	</div>
+
+</section>
+<!-- Footer Start -->
+<footer class="bg-[#353535] bottom-0 w-full text-white pb-6 lg:px-10">
+	<div class="lg:justify-between lg:flex">
+		<div class="p-5">
+			<a href="https://startyourcontentacademy.com/"><img class="w-[110px] lg:w-[189px] lg:h-[116px]" src="https://startyourcontentacademy.com/assets/img/logo-footer.png" alt=""></a>
+			<p class="mt-5">Helping people build and grow their brand through social media content.</p>
+
+			<div class="mt-5 md:hidden lg:hidden">
+				<h3>Cara Menggunakan: </h3>
+				<a href="https://startyourcontentacademy.com/instruction" class="pt-3 text-lg"><i class="fa-solid fa-person-chalkboard text-primary"></i> Tutorial</a>
+			</div>
+
+			<h6 class="mt-5 font-semibold">Whatsapp: +62 813-7419-2252</h6>
+			<h6 class="font-semibold">Email: info@syca.com</h6>
+		</div>
+		<div class="p-5">
+			<h3>Kunjungi Social Media Kami</h3>
+			<div class="flex gap-4 mt-5">
+				<a href="https://www.instagram.com/syca" target="_blank"><img class="h-[50px] w-[50px]" src="https://startyourcontentacademy.com/assets/img/icon/ig.png" alt=""></a>
+				<a href="https://www.tiktok.com/@syca" target="_blank"><img class="h-[50px] w-[50px]" src="https://startyourcontentacademy.com/assets/img/icon/tiktok.png" alt=""></a>
+			</div>
+			<div class="hidden mt-5 lg:block">
+				<h3>Cara Menggunakan: </h3>
+				<a href="https://startyourcontentacademy.com/instruction" class="pt-3 text-lg"><i class="fa-solid fa-person-chalkboard text-primary"></i> Tutorial</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer End -->
+
+
+<script src="https://startyourcontentacademy.com/assets/js/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+<script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js" crossorigin="anonymous" defer></script>
+
+
+<script>
+	function logout() {
+		Swal.fire({
+			title: "Are you sure?",
+			text: "You will be logged out!",
+			icon: "warning",
+			showCancelButton: true,
+			confirmButtonText: "yes",
+			denyButtonText: `no`
+		}).then((result) => {
+			/* Read more about isConfirmed, isDenied below */
+			if (result.isConfirmed) {
+				$.ajax({
+					url: "https://startyourcontentacademy.com/sign_in/logout",
+					type: "GET",
+					dataType: "JSON",
+					async: true,
+					success: function(response) {
+						location.reload();
+					},
+					error: function(jqXHR, textStatus, errorThrown) {
+						ajaxErrRes(jqXHR, textStatus, errorThrown);
+					},
+				});
+			}
+		});
+	}
+</script>
+</body>
+
+</html>

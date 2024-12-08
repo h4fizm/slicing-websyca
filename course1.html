@@ -1,0 +1,2834 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SYCA | Online Education Platform</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://startyourcontentacademy.com/assets/template/images/favicon.png"
+    />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="assets/css/custom.css" rel="stylesheet" />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://startyourcontentacademy.com/assets/css/tailwind/style.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://startyourcontentacademy.com/assets/css/custom.css?version=241201-053611"
+    />
+    <link
+      rel="stylesheet"
+      href="https://startyourcontentacademy.com/assets/css/wcc.css?version=241201-053611"
+    />
+
+    <!-- Inline CSS -->
+    <style>
+      /* Tambahkan gaya khusus untuk latar belakang */
+      .bg-custom {
+        background-image: url("https://startyourcontentacademy.com/assets/img/bg.svg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .bg-custom-home {
+        background-image: url("https://startyourcontentacademy.com/assets/img/bg_home.svg");
+        background-size: cover;
+        background-position: center;
+      }
+
+      .video-wrapper iframe {
+        max-width: 100%;
+      }
+    </style>
+
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!-- Inline JS -->
+    <script>
+      // Meta Pixel Code
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+
+      fbq("init", "800225455535758");
+      fbq("track", "PageView");
+    </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        src="https://www.facebook.com/tr?id=800225455535758&ev=PageView&noscript=1"
+      />
+    </noscript>
+  </head>
+
+  <body class="font-['Montserrat']">
+    <!-- header start -->
+    <header
+      class="absolute top-0 left-0 z-10 flex items-center w-full px-5 mb-10 bg-transparent lg:p-0"
+    >
+      <div class="container mx-auto">
+        <div class="relative flex items-center justify-between">
+          <div class="px-4">
+            <a
+              href="https://startyourcontentacademy.com/"
+              class="block py-6 text-lg font-bold text-primary"
+              ><img
+                src="https://startyourcontentacademy.com/assets/img/logo-dark.svg"
+                alt="Logo"
+            /></a>
+          </div>
+          <div class="flex items-center px-4">
+            <a
+              href="https://startyourcontentacademy.com/course#allCourse"
+              class="mr-6 text-2xl cursor-pointer lg:hidden text-primary"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+            <a
+              href="https://wa.me/+6281374192252"
+              target="_blank"
+              class="mr-12 text-2xl cursor-pointer text-primary lg:hidden"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute block right-4 lg:hidden"
+            >
+              <span
+                class="transition duration-300 origin-top-left hamburger-line"
+              ></span>
+              <span class="transition duration-300 hamburger-line"></span>
+              <span
+                class="transition duration-300 origin-bottom-left hamburger-line"
+              ></span>
+            </button>
+
+            <nav
+              id="nav-menu"
+              class="absolute hidden py-5 bg-white rounded-lg shadow-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="https://startyourcontentacademy.com/home"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="https://startyourcontentacademy.com/course"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary text-primary font-bold outline-emerald-700"
+                    >Kelas</a
+                  >
+                </li>
+                <!-- Tambahkan rute untuk testimoni di routes.php CodeIgniter -->
+                <li class="group">
+                  <a
+                    href="https://startyourcontentacademy.com/testimoni_course"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Testimoni</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="https://startyourcontentacademy.com/instruction"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Tutorial</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="https://startyourcontentacademy.com/instruction/access_problem"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Kendala Akses</a
+                  >
+                </li>
+                <!-- <li class="hidden group lg:block md:hidden">
+							<div class="relative py-1 mx-4">
+								<input type="text" class="relative w-64 h-8 px-4 py-2 text-base rounded-xl top-37 left-734 ring-1 ring-slate-800 focus:ring-2 focus:outline-none" id="search_val">
+								<i class="absolute right-0 mr-4 text-base transform -translate-y-1/2 top-1/2 text-slate-600 fa-solid fa-magnifying-glass"></i>
+							</div>
+						</li> -->
+                <!-- Tambahkan rute untuk login di routes.php CodeIgniter -->
+                <li class="group lg:hidden">
+                  <a
+                    href="https://startyourcontentacademy.com/sign_in?bool=true"
+                    class="flex py-2 mx-8 text-base text-slate-600 group-hover:text-primary"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hidden px-4 lg:block">
+            <a
+              href="https://wa.me/+6281374192252"
+              target="_blank"
+              class="mr-5 text-2xl cursor-pointer text-primary"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a
+              href="https://startyourcontentacademy.com/course#allCourse"
+              class="mr-6 text-2xl cursor-pointer text-primary"
+              ><i class="fa-solid fa-cart-shopping"></i
+            ></a>
+
+            <a
+              href="https://startyourcontentacademy.com/sign_in?bool=true"
+              class="py-4 px-4 text-base text-white rounded-[20px] bg-primary hover:opacity-80 lg:w-[75px] lg:px-8 lg:h-[20px] text-center login_logout_button"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <div
+      class="fixed hidden w-1/2 mx-auto transform -translate-x-1/2 bg-white border-2 left-1/2 p-7 rounded-2xl h-96 border-emerald-700"
+      id="card-result"
+    >
+      <div class="h-full overflow-y-auto resultView"></div>
+    </div>
+
+    <script>
+      $("#search_val")
+        .focus(function () {
+          $("#card-result").removeClass("hidden").addClass("block");
+        })
+        .blur(function () {
+          setTimeout(function () {
+            $("#card-result").removeClass("block").addClass("hidden");
+          }, 3000); // 3 detik
+        });
+
+      $("#search_val").keyup(function () {
+        $(".resultView").html(
+          '<i class="fa-solid fa-spinner animate-spin"></i>'
+        );
+        search();
+      });
+
+      async function search() {
+        let search_val = $("#search_val").val();
+        var url =
+          "https://startyourcontentacademy.com/Api/search?search=" + search_val;
+
+        await $.ajax({
+          url: url,
+          type: "GET",
+          dataType: "JSON",
+          async: true,
+          success: function (response) {
+            $(".resultView").html(response.view);
+          },
+        });
+      }
+    </script>
+
+    <!-- Hero section start -->
+
+    <section id="hero" style="display: flex" class="color-white">
+      <div class="container mx-auto mt-20 lg:mt-36 p-5" style="z-index: 1">
+        <div
+          class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto"
+          style="display: flex; flex-direction: column"
+        >
+          <div
+            class="text-[24px] lg:text-[32px] mx-auto text-center font-extra-bold"
+          >
+            Rahasia Jutaan Views, Naikin Followers & Hasilin Duit 10x Lipat
+            lewat <span class="text-green">Winning Content</span>
+          </div>
+          <div
+            class="text-[20px] lg:text-[24px] mx-auto text-center font-bold mt-5"
+            style="
+              padding: 5px 16px;
+              color: white;
+              background-color: #49b5a5;
+              border-radius: 10px;
+            "
+          >
+            Batch 3 : 14 - 27 Januari 2025
+          </div>
+          <!-- <img class="mx-auto" src="https://startyourcontentacademy.com/assets/img/manychat/Manychat_webinar2.png"/> -->
+
+          <div class="flex justify-center mt-7 mb-4">
+            <div class="mx-auto video-wrapper">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/BEuZq5nKN_w?si=hZiDgD8rGtJy3uU2&playsinline=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div style="display: flex; align-items: center">
+            <div
+              class="text-[16px] lg:text-[24px] mx-auto"
+              style="max-width: 90%"
+            >
+              Amankan seatmu sebelum
+              <b>Kuota Early Bird Batch 3 : 14 - 27 Januari 2025</b> habis,
+              <span class="highlight-red font-bold">tersisa untuk :</span>
+            </div>
+            <!-- <img src="https://startyourcontentacademy.com/assets/img/wscc/Group1028.png"/> -->
+            <div class="quota">
+              <div class="text">
+                <div><span class="large">26</span><br />Orang</div>
+              </div>
+              <img
+                src="https://startyourcontentacademy.com/assets/img/wscc/Group1.png"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 40px; margin-top: 40px"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kisah" class="mt-4 position-relative">
+      <div class="bg-element-2"></div>
+      <div class="container mx-auto p-5">
+        <div class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div class="text-[16px] lg:text-[24px] mx-auto text-center font-bold">
+            Hai, Cici Konten disini.
+            <span class="highlight-green font-bold">:)</span>
+          </div>
+          <div
+            class="text-[16px] lg:text-[24px] mx-auto text-center mt-2 font-bold"
+          >
+            Percayakah kamu,
+            <span class="highlight-green font-bold">1 Winning Content</span>
+            <span class="font-bold">bisa mengubah total hidupmu?</span>
+          </div>
+          <div
+            class="text-[16px] lg:text-[24px] mx-auto text-center font-bold mt-5"
+          >
+            Karena ini Perubahan yang dialami memberku setelah ketemu
+            <span class="highlight-green">Winning Content</span> mereka :
+          </div>
+          <!-- <div class="relative"> -->
+          <div class="w-[100%] mx-auto mt-10 position-relative">
+            <img
+              class="bg-element-1"
+              src="https://startyourcontentacademy.com/assets/img/wscc/Group1048.png"
+            />
+            <div class="relative mx-auto">
+              <div
+                class="flex justify-center gap-1 mt-5 overflow-hidden testi-slider-affiliate"
+              >
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/testimony/agitacoffee3.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/testimony/fajar1.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/testimony/vincent.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/testimony/anggi1.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://admin.startyourcontentacademy.com/sitefiles/testimony/FIX_SYCA_-_Testimoni_Box_(9)1.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/72.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/coachlika4.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_1.png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_(4).png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_(3).png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_(2).png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_(5).png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_(6).png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+                <div
+                  class="overflow-hidden slide"
+                  style="padding-bottom: 24px; padding: 20px"
+                >
+                  <img
+                    class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                    src="https://syca-admin-x.startyourcontentacademy.com/sitefiles/testimony/REVIEW_AKUN_SYCA_-_Testimoni_Box_(8).png"
+                    alt="Foto"
+                    style="border: 3px solid #3e9a8c"
+                  />
+                </div>
+              </div>
+              <div
+                class="absolute inset-0 flex items-center justify-between w-full -translate-y-1/2 2xl:px-7 slider-controls top-1/2"
+              >
+                <button
+                  class="px-3 py-1 -mx-4 bg-transparent border rounded-full shadow-lg 2xl:mx-1 2xl:w-[71px] 2xl:h-[71px] 2xl:text-2xl border-primary prev-testi-slider-affiliate"
+                >
+                  <i class="fa-solid fa-angle-left text-primary"></i>
+                </button>
+                <button
+                  class="px-3 py-1 -mx-4 bg-transparent border rounded-full shadow-lg 2xl:mx-1 2xl:w-[71px] 2xl:h-[71px] 2xl:text-2xl border-primary next-testi-slider-affiliate"
+                >
+                  <i class="fa-solid fa-angle-right text-primary"></i>
+                </button>
+              </div>
+            </div>
+
+            <div
+              class="flex justify-center gap-4 mx-auto"
+              style="margin-bottom: 40px; margin-top: 40px"
+            >
+              <a
+                onclick="openBundleModal()"
+                class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow"
+                >Daftar Sekarang</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+    <section
+      style="
+        display: flex;
+        flex-direction: column;
+        background-color: #dff0ed;
+        position: relative;
+      "
+    >
+      <img
+        class="bg-element-1"
+        src="https://startyourcontentacademy.com/assets/img/wscc/Frame427320513.png"
+        style="z-index: 0"
+      />
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 40px; display: flex; flex-direction: column"
+      >
+        <div
+          class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto"
+          style="display: flex; flex-direction: column"
+        >
+          <div class="text-[16px] lg:text-[24px] mx-auto text-center">
+            <b>Tapi realistis,</b> butuh
+            <b>trial error bahkan sampai bertahun-tahun</b> untuk temukan pola
+            winning content yang tepat,
+          </div>
+
+          <img
+            class="mx-auto mt-5 mb-5"
+            src="https://startyourcontentacademy.com/assets/img/wscc/Group1091.png"
+          />
+
+          <div class="text-[16px] lg:text-[24px] mx-auto text-center">
+            Dan kalau kamu membaca sampai sini,
+            <b>kemungkinan besar kamu sedang dalam kondisi :</b>
+          </div>
+          <div class="box-container border-green-gradient style1 mt-4">
+            <ul class="text-[16px] lg:text-[24px] list-1">
+              <li>
+                <hgb>Udah cape posting tiap hari,</hgb> coba strategi ini itu,
+                tapi followers, viewers, dan engagement stuck ga naik
+              </li>
+              <li>
+                Sulit konsisten posting tiap hari dan bingung
+                <hgb>cara bersaing</hgb> di algoritma sekarang
+              </li>
+              <li>
+                Kewalahan adaptasi tren & <hgb>strategi baru</hgb> yang
+                bermunculan di sosmed
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="text-[16px] lg:text-[24px] mx-auto text-center font-bold mt-10 mb-5"
+          >
+            Dan kamu mungkin bertanya-tanya…
+          </div>
+
+          <!-- <div class="box-container style2 text-[16px] lg:text-[24px] text-center">
+                Adakah <hyb>Jalan Pintas</hyb> tercepat untuk menemukan <hyb>Winning Content...</hyb><br/>
+                <br/>
+                ...tanpa harus habiskan <hyb>waktu dan usaha</hyb> posting tiap hari?
+                
+                <img class="mx-auto mt-4 mb-4" src="https://startyourcontentacademy.com/assets/img/wscc/Frame427320546.png"/>
+            </div>
+             -->
+          <div
+            class="box-container style3 text-[14px] lg:text-[20px] text-center mt-4"
+            style="border-radius: 999px"
+          >
+            Adakah <hgb>Jalan Pintas</hgb> tercepat untuk menemukan Winning
+            Content...
+          </div>
+          <div
+            class="box-container style3 text-[14px] lg:text-[20px] text-center mt-4"
+            style="border-radius: 999px"
+          >
+            ...tanpa harus habiskan <hgb>waktu dan usaha</hgb> posting tiap
+            hari?
+          </div>
+          <div
+            class="box-container style3 text-[14px] lg:text-[20px] text-center mt-4 text-green"
+            style="border-radius: 999px; display: flex"
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin: auto;
+                gap: 10px;
+              "
+            >
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/tick-circle.png"
+              />
+              <div>Jawaban nya:</div>
+              <div class="text-[16px] lg:text-[24px] font-bold text-green">
+                Yes, ada!
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="box-container text-[16px] lg:text-[24px] text-center mt-4"
+            style="display: flex; flex-direction: column"
+          >
+            <div class="text-[24px] lg:text-[32px] font-bold">
+              Dan semuanya itu dirangkum ke dalam:
+            </div>
+          </div>
+          <img
+            class="mx-auto mt-4 mb-4"
+            src="https://startyourcontentacademy.com/assets/img/wscc/Bundle01a1.png"
+          />
+
+          <div
+            class="text-[20px] lg:text-[24px] mx-auto text-center font-bold mt-5"
+            style="
+              padding: 5px 16px;
+              color: white;
+              background-color: #49b5a5;
+              border-radius: 10px;
+            "
+          >
+            Batch 3 : 14 - 27 Januari 2025
+          </div>
+          <div
+            class="text-[16px] lg:text-[20px] mx-auto text-center font-bold mt-3"
+            style="padding: 5px 16px"
+          >
+            Sisa Kuota
+            <span style="color: red; text-decoration: underline"
+              >Tinggal 26 Orang</span
+            >
+          </div>
+
+          <div
+            class="box-container style4 header text-[16px] lg:text-[24px] text-center mt-4"
+          >
+            <b>14 Days Winning Content Challenge</b>
+            (Live Webinar & Course)
+          </div>
+          <div
+            class="box-container style4 body text-[16px] lg:text-[24px] text-center"
+          >
+            <hgb>Modul</hgb> <b>hasil riset selama 5 tahun</b> dari pengalaman
+            pribadi dan puluhan kreator >100K-1M Followers :<br />
+            <br />
+            <b>Faktor-faktor</b> mereka bisa cepat temukan
+            <b
+              >titik viral <hgb>(winning content)</hgb>, naikkin followers, dan
+              hasilin duit,</b
+            ><br />
+            <br />
+            semua dirangkum <b>dalam <hgb>14 HARI</hgb> saja.</b><br />
+            <br />
+            <b>Dilengkapi Grup Bimbingan, supaya kamu bisa langsung praktek!</b>
+          </div>
+        </div>
+      </div>
+
+      <a
+        onclick="openBundleModal()"
+        class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+        style="margin-bottom: 40px; margin-top: 40px; z-index: 2"
+        >Daftar Sekarang</a
+      >
+    </section>
+
+    <!-- Hero section end -->
+    <section style="display: flex; background-color: #b6dfd9">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 40px; display: flex; flex-direction: column"
+      >
+        <div class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div
+            class="text-[24px] lg:text-[40px] mx-auto text-center color-red font-bold"
+          >
+            Saat kamu temukan <hgb>“Winning Konten”,</hgb> maka gamenya berubah
+          </div>
+          <div class="text-[16px] lg:text-[24px] mx-auto text-center mt-5">
+            Bahkan cukup <b>posting 1x/minggu</b> bisa menarik
+            <b>puluhan ribu followers</b> hingga
+            <b>hasilin Jutaan Rupiah</b> seperti :
+          </div>
+
+          <div class="relative 2xl:w-[1128px] mx-auto lg:w-[824px]">
+            <div
+              class="flex justify-center gap-1 mt-5 overflow-hidden cerita-slider-affiliate"
+            >
+              <div
+                class="overflow-hidden slide"
+                style="padding-bottom: 24px; padding: 20px"
+              >
+                <img
+                  class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                  src="https://startyourcontentacademy.com/assets/img/wscc/testimony/1.png"
+                  alt="Foto"
+                />
+              </div>
+              <div
+                class="overflow-hidden slide"
+                style="padding-bottom: 24px; padding: 20px"
+              >
+                <img
+                  class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                  src="https://startyourcontentacademy.com/assets/img/wscc/testimony/2.png"
+                  alt="Foto"
+                />
+              </div>
+              <div
+                class="overflow-hidden slide"
+                style="padding-bottom: 24px; padding: 20px"
+              >
+                <img
+                  class="w-[full] h-[full] mx-auto my-auto lg:hidden 2xl:hidden rounded-[20px] drop-shadow-xl"
+                  src="https://startyourcontentacademy.com/assets/img/wscc/testimony/3.png"
+                  alt="Foto"
+                />
+              </div>
+            </div>
+            <div
+              class="absolute inset-0 flex items-center justify-between w-full -translate-y-1/2 2xl:px-7 slider-controls top-1/2"
+            >
+              <button
+                class="px-3 py-1 -mx-4 bg-transparent border rounded-full shadow-lg 2xl:mx-1 2xl:w-[71px] 2xl:h-[71px] 2xl:text-2xl border-primary prev-cerita-slider-affiliate"
+              >
+                <i class="fa-solid fa-angle-left text-primary"></i>
+              </button>
+              <button
+                class="px-3 py-1 -mx-4 bg-transparent border rounded-full shadow-lg 2xl:mx-1 2xl:w-[71px] 2xl:h-[71px] 2xl:text-2xl border-primary next-cerita-slider-affiliate"
+              >
+                <i class="fa-solid fa-angle-right text-primary"></i>
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 40px; margin-top: 40px; width: 100%"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+              style="
+                margin-bottom: 40px;
+                margin-top: 40px;
+                z-index: 2;
+                max-width: 100%;
+              "
+              >Temukan Winning Kontenmu Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section style="display: flex; background-color: #3e9a8c">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+          color: white;
+        "
+      >
+        <div class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div class="text-[24px] lg:text-[40px] mx-auto text-center font-bold">
+            Kelas Ini Cocok untuk Kamu yang…
+          </div>
+          <div class="cocok-item">
+            <img
+              class=""
+              src="https://startyourcontentacademy.com/assets/img/wscc/cocok/1.png"
+            />
+            <div style="flex: 1">
+              <div class="cocok-header">
+                <div
+                  class="text-[20px] lg:text-[24px] mx-auto text-center-mobile font-bold text-yellow"
+                >
+                  Pemula
+                </div>
+                <div
+                  class="text-[16px] lg:text-[24px] mx-auto text-center-mobile"
+                >
+                  (belum memulai)
+                </div>
+              </div>
+              <div
+                class="text-[14px] mx-auto text-center-mobile mt-4 cocok-content"
+              >
+                Buat yang baru mau merintis, belum punya ide dan ingin mulai
+                bangun followers tapi tidak tahu harus mulai darimana.
+              </div>
+            </div>
+          </div>
+          <div class="cocok-item reverse">
+            <div style="flex: 1">
+              <div class="cocok-header">
+                <div
+                  class="text-[20px] lg:text-[24px] mx-auto text-center-mobile font-bold text-yellow"
+                >
+                  Content Creator / Influencer
+                </div>
+                <div
+                  class="text-[16px] lg:text-[24px] mx-auto text-center-mobile"
+                >
+                  (belum temukan winning content)
+                </div>
+              </div>
+              <div
+                class="text-[14px] mx-auto text-center-mobile mt-4 cocok-content"
+              >
+                Terutama yang &lt;100 ribu followers & ingin temukan pola
+                Winning Content, Menarik Followers dan Hasilin Duit tanpa
+                habiskan waktu dan usaha posting tiap hari.
+              </div>
+            </div>
+            <img
+              class=""
+              src="https://startyourcontentacademy.com/assets/img/wscc/cocok/2.png"
+            />
+          </div>
+          <div class="cocok-item">
+            <img
+              class=""
+              src="https://startyourcontentacademy.com/assets/img/wscc/cocok/3.png"
+            />
+            <div style="flex: 1">
+              <div class="cocok-header">
+                <div
+                  class="text-[20px] lg:text-[24px] mx-auto text-center-mobile font-bold text-yellow"
+                >
+                  Pebisnis
+                </div>
+              </div>
+              <div
+                class="text-[14px] mx-auto text-center-mobile mt-4 cocok-content"
+              >
+                Ingin menarik customer/client dan banjir orderan dari konten,
+                namun sulit cari waktu dan resource untuk ikuti perkembangan
+                tren sosial media di tengah kesibukan.
+              </div>
+            </div>
+          </div>
+          <div class="cocok-item reverse">
+            <div style="flex: 1">
+              <div class="cocok-header">
+                <div
+                  class="text-[20px] lg:text-[24px] mx-auto text-center-mobile font-bold text-yellow"
+                >
+                  Karyawan / Profesional, Ibu Rumah Tangga
+                </div>
+              </div>
+              <div
+                class="text-[14px] mx-auto text-center-mobile mt-4 cocok-content"
+              >
+                Ingin mendapatkan penghasilan tambahan lewat posting namun susah
+                mencari waktu di tengah pekerjaan setiap hari.
+              </div>
+            </div>
+            <img
+              class=""
+              src="https://startyourcontentacademy.com/assets/img/wscc/cocok/4.png"
+            />
+          </div>
+
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 40px; margin-top: 40px; width: 100%"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+              style="margin-bottom: 40px; margin-top: 40px; z-index: 2"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: flex; background-color: #fff">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 40px; display: flex; flex-direction: column"
+      >
+        <div
+          class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto"
+          style="display: flex; flex-direction: column"
+        >
+          <div
+            class="text-[24px] lg:text-[40px] mx-auto text-center text-green font-bold"
+          >
+            Apa saja yang akan Kamu Dapatkan :
+          </div>
+          <div class="text-[16px] lg:text-[24px] mx-auto text-center mt-5">
+            <b>Exclusive Online Training selama 14 hari yang terdiri dari :</b
+            ><br />
+            (Tersedia akses rekaman jika berhalangan)
+          </div>
+          <div
+            class="text-[20px] lg:text-[24px] mx-auto text-center font-bold mt-5"
+            style="
+              padding: 5px 16px;
+              color: white;
+              background-color: #49b5a5;
+              border-radius: 10px;
+            "
+          >
+            Batch 3 : 14 - 27 Januari 2025
+          </div>
+          <div
+            class="text-[16px] lg:text-[20px] mx-auto text-center font-bold mt-3"
+            style="padding: 5px 16px"
+          >
+            Sisa Kuota
+            <span style="color: red; text-decoration: underline"
+              >Tinggal 26 Orang</span
+            >
+          </div>
+
+          <div class="benefit-item">
+            <img
+              class=""
+              src="https://startyourcontentacademy.com/assets/img/wscc/benefit/1.png"
+            />
+            <div style="flex: 1">
+              <div
+                class="box-container style4 header text-[16px] lg:text-[24px] text-center-mobile mt-4"
+              >
+                <b>2x Private Group Coaching</b><br />
+                (Live di Zoom)
+              </div>
+              <div
+                class="box-container style4 body text-[14px] lg:text-[20px] text-center-mobile"
+              >
+                Berupa 2x sesi Live Private Group di awal dan akhir challenge
+                untuk memberikan gambaran strategi, cara praktek, serta evaluasi
+                hasil kontenmu di akhir challenge
+              </div>
+            </div>
+          </div>
+          <div class="benefit-item reverse">
+            <div style="flex: 1">
+              <div
+                class="box-container style4 header text-[16px] lg:text-[24px] text-center-mobile mt-4"
+              >
+                <b>Video & Action Steps selama 14 Hari</b>
+              </div>
+              <div
+                class="box-container style4 body text-[14px] lg:text-[20px] text-center-mobile"
+              >
+                Tidak hanya berisi teori, namun kamu akan mendapatkan action
+                steps detail untuk praktek apa saja selama 14 hari :
+              </div>
+            </div>
+            <img
+              class=""
+              src="https://startyourcontentacademy.com/assets/img/wscc/benefit/2.png"
+            />
+          </div>
+
+          <div
+            class="text-[16px] lg:text-[24px] mx-auto text-center mt-5 font-bold"
+          >
+            Yang akan dibagi sebagai berikut :
+          </div>
+
+          <div
+            class="box-container style3 body text-[14px] lg:text-[20px] mt-5"
+            style="max-width: 100%"
+          >
+            <div style="display: flex; align-items: flex-start">
+              <div class="text-[20px] lg:text-[32px] font-bold" style="flex: 1">
+                <hgb>Module 1 :</hgb><br />
+                Mengenal Winning Content
+              </div>
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/days/1.png"
+              />
+            </div>
+
+            <ul
+              class="text-[14px] lg:text-[20px] list-1 mt-4"
+              style="line-height: 21px"
+            >
+              <li>
+                Cara “Menang” Bersaing di Algoritma sekarang : Era Kualitas >
+                Kuantitas
+              </li>
+              <li>
+                Studi Kasus Winning Konten : Hasilin 100 Juta 1 bulan meski
+                posting 1x/minggu
+              </li>
+              <li>Mindset & Framework jalan tercepat dapat Winning Content</li>
+            </ul>
+          </div>
+
+          <div
+            class="box-container style3 body text-[14px] lg:text-[20px] mt-5"
+            style="max-width: 100%"
+          >
+            <div style="display: flex; align-items: flex-start">
+              <div class="text-[20px] lg:text-[32px] font-bold" style="flex: 1">
+                <hgb>Module 2 :</hgb><br />
+                Tentukan Niche/Target Market
+              </div>
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/days/2.png"
+              />
+            </div>
+
+            <ul
+              class="text-[14px] lg:text-[20px] list-1 mt-4"
+              style="line-height: 21px"
+            >
+              <li>Menentukan Niche Profitable yang cepat menghasilkan</li>
+              <li>Cara Cepat Naik di Akun Lama vs. Akun Baru</li>
+              <li>
+                Content Pillar : Mengatur porsi konten tepat sesuai target
+                market
+              </li>
+              <li>
+                Strategi mengenali target market untuk bikin konten yang “kena”
+                ke mereka
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="box-container style3 body text-[14px] lg:text-[20px] mt-5"
+            style="max-width: 100%"
+          >
+            <div style="display: flex; align-items: flex-start">
+              <div class="text-[20px] lg:text-[32px] font-bold" style="flex: 1">
+                <hgb>Module 3 :</hgb><br />
+                Mencari Ide Winning Content
+              </div>
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/days/3.png"
+              />
+            </div>
+
+            <ul
+              class="text-[14px] lg:text-[20px] list-1 mt-4"
+              style="line-height: 21px"
+            >
+              <li>Strategi Riset Tren & Topik konten yang akan naik</li>
+              <li>
+                Buyer’s Journey & Variasi Konten : Bikin Konten yang menarik
+                orang asing buat Follow, Interaksi, dan Beli
+              </li>
+              <li>
+                Baca hasil performa kontenmu untuk menentukan Winning Content
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="box-container style3 body text-[14px] lg:text-[20px] mt-5"
+            style="max-width: 100%"
+          >
+            <div style="display: flex; align-items: flex-start">
+              <div class="text-[20px] lg:text-[32px] font-bold" style="flex: 1">
+                <hgb>Module 4 :</hgb><br />
+                Temukan Keunikan/ Kepribadian Brand
+              </div>
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/days/4.png"
+              />
+            </div>
+
+            <ul
+              class="text-[14px] lg:text-[20px] list-1 mt-4"
+              style="line-height: 21px"
+            >
+              <li>
+                12 Kepribadian Brand : Mencari pembeda dirimu dengan kompetitor
+                lainnya lewat branding yang menonjol
+              </li>
+              <li>Studi kasus akun yang berhasil punya kepribadian brand</li>
+              <li>Cara menyampaikan kepribadian brandmu lewat konten</li>
+            </ul>
+          </div>
+
+          <div
+            class="box-container style3 body text-[14px] lg:text-[20px] mt-5"
+            style="max-width: 100%"
+          >
+            <div style="display: flex; align-items: flex-start">
+              <div class="text-[20px] lg:text-[32px] font-bold" style="flex: 1">
+                <hgb>Module 5 :</hgb><br />
+                Mengenal Algoritma
+              </div>
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/days/5.png"
+              />
+            </div>
+
+            <ul
+              class="text-[14px] lg:text-[20px] list-1 mt-4"
+              style="line-height: 21px"
+            >
+              <li>
+                Strategi Menarik Followers di algoritma sekarang & Prediksi
+                kedepannya
+              </li>
+              <li>Do’s dan Don’ts Menaikkan Views & Engagement</li>
+              <li>
+                Perbedaan algoritma IG sekarang dengan platform lain (Tiktok,
+                YouTube Shorts)
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="box-container style3 body text-[14px] lg:text-[20px] mt-5"
+            style="max-width: 100%"
+          >
+            <div style="display: flex; align-items: flex-start">
+              <div class="text-[20px] lg:text-[32px] font-bold" style="flex: 1">
+                <hgb>Module 6 :</hgb><br />
+                Menyusun Konten Menarik
+              </div>
+              <img
+                class=""
+                src="https://startyourcontentacademy.com/assets/img/wscc/days/6.png"
+              />
+            </div>
+
+            <ul
+              class="text-[14px] lg:text-[20px] list-1 mt-4"
+              style="line-height: 21px"
+            >
+              <li>
+                Menyusun konten yang bikin orang simak dari awal sampai akhir
+              </li>
+              <li>Tips & Tools shooting & editing yang hemat budget & waktu</li>
+              <li>
+                Strategi Stok Konten (batching) hingga bisa bikin 10 konten
+                dalam 2 jam
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 40px; margin-top: 40px; width: 100%"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+              style="margin-bottom: 40px; margin-top: 40px; z-index: 2"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: flex; background-color: #2c6d63">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 40px; display: flex; flex-direction: column"
+      >
+        <div class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div
+            class="text-[24px] lg:text-[40px] mx-auto text-center text-yellow font-bold"
+          >
+            Dan Kamu Tidak Akan Belajar Sendirian…
+          </div>
+          <img
+            class="mx-auto"
+            src="https://startyourcontentacademy.com/assets/img/wscc/facility/1.png"
+            style="margin-top: 40px; margin-bottom: 40px"
+          />
+
+          <div class="box-gold">
+            <div
+              class="inner"
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div
+                class="text-[24px] lg:text-[40px] mx-auto text-center font-bold"
+              >
+                Exclusive 14 Days Community Access
+              </div>
+              <p
+                class="text-[16px] lg:text-[24px] text-center"
+                style="margin-top: 20px; margin-bottom: 20px"
+              >
+                Setelah join kelas, kamu juga akan mendapatkan akses eksklusif
+                grup dimana bisa bertanya langsung seputar materi + networking
+                <br /><br />
+                Grupnya hanya akan terbuka selama 14 HARI. Kenapa? Karena kita
+                mau kamu segera PRAKTEK dan merasakan hasilnya…
+              </p>
+            </div>
+          </div>
+          <img
+            class="mx-auto"
+            src="https://startyourcontentacademy.com/assets/img/wscc/facility/2.png"
+            style="margin-top: 40px; margin-bottom: 40px"
+          />
+
+          <h3
+            class="text-[16px] lg:text-[24px] text-center"
+            style="margin-bottom: 10px; color: white"
+          >
+            <b>Diakhir 14 Hari,</b> akan dipilih 3 orang pemenang dengan Konten
+            paling Menarik mendapatkan hadiah Senilai Jutaan rupiah dalam bentuk
+            :
+          </h3>
+
+          <div class="winner-container">
+            <div
+              class="box-container style3 body text-[14px] lg:text-[20px] font-bold text-center winner-box"
+              style="max-width: 100%"
+            >
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/facility/juara1.png"
+                style="margin-bottom: 20px"
+              />
+              <div style="flex: 1">
+                Kesempatan 1-on-1 Konsultasi/bedah konten dengan ci Victoria
+              </div>
+              <div class="text-yellow-dark mt-3">Senilai Rp 10,250,000</div>
+            </div>
+            <div
+              class="box-container style3 body text-[14px] lg:text-[20px] font-bold text-center winner-box"
+              style="max-width: 100%"
+            >
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/facility/juara2.png"
+                style="margin-bottom: 20px"
+              />
+              <div style="flex: 1">
+                Ring Light Midio 18 Inch + Lightstand 2M dan BOYA BY-M1DM Dual
+                Clip On Mic (bisa colok HP/DSLR Camera)
+              </div>
+              <div class="text-yellow-dark mt-3">Senilai Rp 1,050,000</div>
+            </div>
+            <div
+              class="box-container style3 body text-[14px] lg:text-[20px] font-bold text-center winner-box"
+              style="max-width: 100%"
+            >
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/facility/juara3.png"
+                style="margin-bottom: 20px"
+              />
+              <div style="flex: 1">
+                USAMS ZB209 Stand Phone Live Show Multi Fungsi Ring Light
+              </div>
+              <div class="text-yellow-dark mt-3">Senilai Rp 739,000</div>
+            </div>
+          </div>
+
+          <div
+            class="text-[24px] lg:text-[40px] mx-auto text-center text-yellow font-bold mt-5"
+          >
+            Eits, dan gak hanya itu...
+          </div>
+          <div
+            class="text-[16px] lg:text-[24px] mx-auto text-center font-bold mt-5"
+            style="color: white"
+          >
+            Jika daftar sekarang, kamu akan dapat <hyb>EXTRA BONUS</hyb> khusus
+            Batch 3 ini :
+          </div>
+          <div
+            class="box-container border-green-gradient style1 mt-4 bonus-box text-center-mobile"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/facility/contentcal.png"
+            />
+            <div style="flex: 1">
+              <div class="text-[20px] lg:text-[24px] font-bold text-green">
+                30 Days Content Calendar
+              </div>
+              <div class="text-[16px] lg:text-[24px] mt-1">
+                (Stok 40+ Ide Konten untuk 1 Bulan)
+              </div>
+              <div class="text-[14px] lg:text-[16px] mt-2">
+                Content calendar, tidak hanya template, dilengkapi 40+ ide
+                konten (lebih dari 1 bulan!). Tambah dan atur dalam kalender
+                konten sesuai keinginan.
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-container border-green-gradient style1 mt-4 bonus-box reverse text-center-mobile"
+          >
+            <div style="flex: 1">
+              <div class="text-[20px] lg:text-[24px] font-bold text-green">
+                Sertifikat Keikutsertaan
+              </div>
+              <div class="text-[14px] lg:text-[16px] mt-2">
+                Kamu dapatkan setelah mengikuti semua sesi Webinar, langsung
+                praktek dan Submit Hasilnya!
+              </div>
+            </div>
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/facility/certificate2.png"
+            />
+          </div>
+          <div
+            class="box-container border-green-gradient style1 mt-4 bonus-box text-center-mobile"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/facility/contenthook.png"
+            />
+            <div style="flex: 1">
+              <div class="text-[20px] lg:text-[24px] font-bold text-green">
+                Template Copywriting Headline Menarik
+              </div>
+              <div class="text-[14px] lg:text-[16px] mt-2">
+                Beberapa hacks & template untuk bantu menulis judul Headline
+                menarik hingga orang tertarik, menyimak, dan interaksi (like,
+                follow, comment)
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 40px; margin-top: 40px; width: 100%"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+              style="margin-bottom: 40px; margin-top: 40px; z-index: 2"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: flex; background-color: #2f504b; color: white">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 40px; display: flex; flex-direction: column"
+      >
+        <div class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div class="text-[24px] lg:text-[40px] mx-auto text-center font-bold">
+            Kamu cukup Investasi Sekali untuk Dapatkan Semua Ini :
+          </div>
+          <div
+            class="text-[16px] lg:text-[24px] mt-4 mb-2 text-center"
+            style="color: #fffa89"
+          >
+            Scroll kebawah untuk daftar
+          </div>
+          <img
+            class="mx-auto"
+            src="https://startyourcontentacademy.com/assets/img/wscc/price/arrow.png"
+          />
+
+          <div
+            class="box-container border-green-gradient style1 mt-4 bonus-box"
+            style="background-color: #fffef7; color: black"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/price/bundleprice2.png"
+              style="width: 400px; max-width: 100%"
+            />
+            <div style="flex: 1">
+              <div
+                class="text-[20px] lg:text-[24px] mx-auto text-center font-bold mt-5"
+                style="
+                  padding: 5px 16px;
+                  color: white;
+                  background-color: #49b5a5;
+                  border-radius: 10px;
+                "
+              >
+                Batch 3 : 14 - 27 Januari 2025
+              </div>
+              <div
+                class="text-[16px] lg:text-[20px] mx-auto text-center font-bold mt-3"
+                style="padding: 5px 16px; margin-bottom: 24px"
+              >
+                Sisa Kuota
+                <span style="color: red; text-decoration: underline"
+                  >Tinggal 26 Orang</span
+                >
+              </div>
+              <div class="list2">
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  <div>
+                    2x Private Group Coaching Session
+                    <span class="text-green">(Senilai Rp 5,250,000)</span>
+                  </div>
+                </div>
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  <div>
+                    Video & Action Steps 14 Hari
+                    <span class="text-green">(Senilai 1,500,000)</span>
+                  </div>
+                </div>
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  <div>
+                    Akses ke Exclusive Community selama 14 hari
+                    <span class="text-green">(Senilai Rp 2,250,000)</span>
+                  </div>
+                </div>
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  Kesempatan Menang Hadiah up to 10 Juta
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-[16px] lg:text-[24px] mt-5 mb-2 text-center font-bold"
+          >
+            Dan tambahan Bonus senilai
+          </div>
+          <div
+            class="text-[32px] lg:text-[48px] text-center font-bold"
+            style="color: #f2cf59"
+          >
+            Rp 1,950,000
+          </div>
+          <div
+            class="text-[16px] lg:text-[24px] mt-4 mb-2 text-center font-bold"
+          >
+            berupa :
+          </div>
+
+          <div
+            class="box-container border-green-gradient style1 mt-4 bonus-box"
+            style="background-color: #fffef7; color: black"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/price/bundleprice1.png"
+              style="width: 400px; max-width: 100%"
+            />
+            <div style="flex: 1">
+              <div class="list2">
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  Sertifikat Peserta
+                </div>
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  30 Days Content Calendar (40+ Stok Variasi Ide Konten)
+                </div>
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  Copywriting Hacks for Beginners (E-book)
+                </div>
+                <div class="list2-item text-[16px] lg:text-[24px] font-bold">
+                  <img
+                    class="mt-1"
+                    src="https://startyourcontentacademy.com/assets/img/wscc/price/tick-circle.png"
+                  />
+                  Kesempatan Menang Hadiah up to 10 Juta
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="text-[24px] lg:text-[32px] mt-5 mb-5 text-center font-bold"
+          >
+            Total Value :
+          </div>
+          <!-- <img class="mx-auto" src="https://startyourcontentacademy.com/assets/img/wscc/price/price1.png"/> -->
+          <div
+            class="text-[40px] lg:text-[64px] text-center font-bold text-yellow"
+            style="text-decoration: line-through"
+          >
+            Rp 10.950.000
+          </div>
+
+          <div class="text-[16px] lg:text-[24px] mt-5 mb-5 text-center">
+            Aku butuh waktu
+            <b>6 tahun+ pengalaman & trial error habisin ratusan juta</b> untuk
+            merangkum semua ini yang kini kamu bisa dapatkan hanya dengan:
+          </div>
+          <!-- <img class="mx-auto" src="https://startyourcontentacademy.com/assets/img/wscc/price/price2.png"/> -->
+
+          <div
+            class="text-[40px] lg:text-[64px] text-center font-bold text-yellow"
+            style="text-decoration: line-through"
+          >
+            Rp 998.000
+          </div>
+
+          <div
+            class="text-[20px] lg:text-[24px] mt-5 mb-2 text-center font-bold"
+          >
+            Khusus Diskon Early Bird Batch 3,
+            <span class="text-yellow">HARI INI</span> jadi hanya :
+          </div>
+          <div
+            class="text-[40px] lg:text-[64px] text-center font-bold text-yellow"
+          >
+            Rp 598.000
+          </div>
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 10px; margin-top: 40px; width: 100%"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+              style="margin-bottom: 12px; margin-top: 40px; z-index: 2"
+              >Daftar Sekarang</a
+            >
+          </div>
+          <div
+            class="color-white text-center"
+            style="
+              background: #327b70;
+              border-radius: 10px;
+              padding: 10px;
+              margin-bottom: 20px;
+            "
+          >
+            Dapatkan tambahan Diskon
+            <span class="font-bold" style="color: #fffa89">Rp 150,000</span>
+            sebagai member SYCA saat mendaftar dengan kode :
+            <span class="font-bold" style="color: #fffa89">SYCA150</span>
+          </div>
+          <!-- <div style="display:flex; align-items:center;margin-bottom:40px;">
+                <div class="text-[16px] lg:text-[24px] mx-auto" style="max-width:90%;">
+                    Amankan seatmu sebelum <b>Kuota Early Bird Batch 3 : 14 - 27 Januari 2025</b> habis, <span class="font-bold" style="color:#FFFA89">tersisa untuk :</span>
+                </div>
+                <div class="quota">
+                    <div class="text" style="color:#FFFA89">
+                        <div><span class="large">26</span><br/>Orang</div>
+                    </div>
+                    <img src="https://startyourcontentacademy.com/assets/img/wscc/Group2.png"/>
+                </div>
+            </div> -->
+          <!-- <div class="text-[40px] lg:text-[64px] text-center font-bold price-gold">
+            Rp 1,950,000
+            </div> -->
+        </div>
+      </div>
+    </section>
+    <section style="display: flex; background-color: #fff">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 40px; display: flex; flex-direction: column"
+      >
+        <div class="flex-wrap 2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div class="text-[24px] lg:text-[40px] mx-auto text-center font-bold">
+            Kenalan dengan Mentormu :
+          </div>
+          <img
+            class="mx-auto mt-4 mb-4"
+            src="https://startyourcontentacademy.com/assets/img/wscc/mentor/1.png"
+          />
+          <div class="text-[16px] lg:text-[24px] mt-4 mb-2 text-center">
+            Dan ini hasil perjalanan yang kutempuh 5 tahun terjun di dunia
+            sosial media :
+          </div>
+
+          <div
+            class="box-container border-green-gradient style1 mt-1 mentor-box"
+            style="background-color: #fffef7; color: black"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/mentor/badge.png"
+            />
+            <div style="flex: 1">
+              <div class="text-[14px] lg:text-[20px]">
+                <b>Founder Start Your Content Academy,</b> yang sudah membantu
+                30,000+ members memulai perjalanan kontennya
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-container border-green-gradient style1 mt-1 mentor-box"
+            style="background-color: #fffef7; color: black"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/mentor/badge.png"
+            />
+            <div style="flex: 1">
+              <div class="text-[14px] lg:text-[20px]">
+                Sudah membantu hingga
+                <b
+                  >100+ member mencapai 100 Juta dan 100 ribu Followers
+                  pertamanya</b
+                >
+                dan mengubah hidup lewat konten<br />
+                <span class="text-green"
+                  >(bisa cek #KisahSuksesSYCA di IG)</span
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="box-container border-green-gradient style1 mt-1 mentor-box"
+            style="background-color: #fffef7; color: black"
+          >
+            <img
+              class="mx-auto"
+              src="https://startyourcontentacademy.com/assets/img/wscc/mentor/badge.png"
+            />
+            <div style="flex: 1">
+              <div class="text-[14px] lg:text-[20px]">
+                <b>Dipercaya brand2 multi-nasional</b> seperti Meta, Samsung,
+                Grab, Tokopedia, Shopee, hingga lembaga pemerintahan untuk
+                membantu meningkatkan sosmed mereka
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-logos" style="margin-top: 40px">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/9.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/10.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/11.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/12.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/13.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/14.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/15.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/16.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/17.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/1.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/2.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/3.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/4.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/5.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/6.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/7.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/9.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/10.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/11.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/12.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/13.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/14.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/15.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/16.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/priority_access/client/17.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-photos" style="margin-top: 40px">
+            <div class="slide-track">
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/01.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/02.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/03.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/04.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/05.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/06.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/07.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/08.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/09.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/10.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/11.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/12.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/13.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/14.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/15.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/16.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <!-- <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/2.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/3.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/4.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/5.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/6.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/7.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/8.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/9.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/10.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/11.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/12.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/13.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/14.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/15.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/16.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/17.jpg" alt="" />
+                    </div> -->
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/01.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/02.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/03.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/04.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/05.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/06.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/07.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/08.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/09.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/10.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/11.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/12.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/13.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/14.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/15.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <div class="slide">
+                <img
+                  src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/16.png"
+                  alt=""
+                  style="border-radius: 12px"
+                />
+              </div>
+              <!-- <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/2.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/3.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/4.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/5.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/6.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/7.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/8.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/9.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/10.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/11.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/12.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/13.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/14.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/15.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/16.jpg" alt="" />
+                    </div>
+                    <div class="slide">
+                        <img src="https://startyourcontentacademy.com/assets/img/wscc/mentor/photos/17.jpg" alt="" />
+                    </div> -->
+            </div>
+          </div>
+
+          <div
+            class="text-[16px] lg:text-[24px] mb-2 text-center"
+            style="margin-top: 40px"
+          >
+            Dan aku siap membimbing kamu untuk menjadi alumni
+            <b
+              >Kisah Sukses Konten dari SYCA selanjutnya lewat 14 Days Find Your
+              Winning Content Challenge…</b
+            >
+          </div>
+
+          <div
+            class="flex justify-center gap-4 mx-auto"
+            style="margin-bottom: 40px; margin-top: 40px; width: 100%"
+          >
+            <a
+              onclick="openBundleModal()"
+              class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow mx-auto"
+              style="margin-bottom: 40px; margin-top: 40px; z-index: 2"
+              >Daftar Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="display: flex; flex-direction: column; background: #333333">
+      <div
+        class="container mx-auto lg:mt-36 p-5"
+        style="margin-top: 100px; padding-bottom: 80px"
+      >
+        <div class="2xl:w-[1142px] lg:w-[824px] lg:mx-auto">
+          <div
+            class="text-[24px] lg:text-[32px] mx-auto text-center font-bold"
+            style="color: white"
+          >
+            Pertanyaan yang sering ditanyakan :
+          </div>
+          <div
+            class="text-[14px] lg:text-[26px] mt-4 mb-4 text-center text-yellow"
+          >
+            (klik + untuk buka jawaban)
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Apakah bisa diterapkan di Reels/Shorts/Tiktok?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Yes, meski fokus utamanya adalah di IG (Reels) tapi materinya
+                bisa diterapkan untuk Tiktok & Shorts yang formatnya video
+                pendek, karena ketiganya sama2 punya algoritma/cara kerja yang
+                serupa
+              </div>
+            </div>
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Apakah Kelas online ini cocok buat Pemula?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Yes, karena kelas ini khusus dibuat dari level yang paling
+                pemula/belum paham dengan bahasa yang gampang dimengerti (ga
+                pake istilah rumit2)
+                <br /><br />
+                Dan Mentor / Ci Victoria yang mengisi juga sudah terbukti
+                berhasil membimbing member yang latar belakangnya dari 0
+                followers/views yang mentok hingga bisa menghasilkan 100
+                juta/bulan dan meraih 100,000 followers tanpa posting tiap hari
+                <br /><br />
+                Plus belajarnya ga sendiri, ada Grup Eksklusif untuk dibimbing
+                Praktek selama 10 Hari bareng team Expert dan Creators lainnya
+              </div>
+            </div>
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Apa akan dibimbing Langsung? Berapa lama?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Ya, setelah belajar materinya kamu bisa bertanya2 di Grup
+                Eksklusif yang langsung dijawab oleh team Expert dan Creators
+                lainnya.
+                <br /><br />
+                Tapi memang hanya berlaku selama 14 HARI, karena Goal kita
+                adalah supaya kamu bisa Praktek dan dapat Hasilnya secepat
+                mungkin :)
+              </div>
+            </div>
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Apakah cocok buat Bisnis/Jualan?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Cocok sekali terutama kalo kamu mau menarik Followers secara
+                organik (gratis murni dari konten), mengedukasi mereka, bangun
+                rasa percaya, dan dari ubah mereka jadi Client/Customermu TANPA
+                harus kewalahan posting setiap hari
+                <br /><br />
+                <span class="text-green"
+                  ><b>Note :</b>
+                  <i
+                    >disini tidak diajarkan ngiklan, tips closing, dsb, tapi
+                    Fokus ke IG Reels. Materinya bisa kamu pakai untuk bikin
+                    konten iklan dan jualanmu menarik</i
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Apakah cocok buat Kreator?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Cocok sekali karena disini diajarin cara bangun Followers supaya
+                personal brandmu naik. Ditambah, disini kamu juga bisa belajar
+                tipe konten jualan yang akan berguna buat nanti kamu endorse,
+                atau bangun bisnis sendiri di sosmed (ubah followers jadi
+                customermu)
+              </div>
+            </div>
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Akses Webinar Berlaku berapa lama?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Webinar akan diadakan selama 3 hari dan per hari 2 jam, serta
+                Akses Replaynya akan dibagikan dengan batas periode waktu sampai
+                10 hari
+                <br /><br />
+                Kenapa dibatasin? Supaya kamu segera gercep Praktek dan bener2
+                dapat hasil dari Webinar ini :)
+                <br /><br />
+                Jika ingin dibimbing seumur hidup/bisa bertanya kapanpun, bisa
+                mengambil paket barengan dengan course SYCA di Opsi setelah page
+                ini (klik Daftar Sekarang > Jalur yang mau dipilih > Ambil
+                penawaran spesial)
+              </div>
+            </div>
+          </div>
+          <div class="box-container mt-1 faq-box">
+            <div class="faq-header closed" onclick="toggleFAQ(this)">
+              <div
+                class="text-[14px] lg:text-[20px] text-green font-bold"
+                style="flex: 1"
+              >
+                Jadwalku Berhalangan, apa bisa ikut Kelasnya?
+              </div>
+              <img
+                class="mx-auto"
+                src="https://startyourcontentacademy.com/assets/img/wscc/mentor/arrow-circle-up.png"
+              />
+            </div>
+            <div class="faq-content closed">
+              <div class="text-[14px] lg:text-[20px]">
+                Tenang, akses Replay akan dibagikan untuk kamu tonton jika
+                ketinggalan dan akan berlaku hingga 14 hari. Jadi kamu juga bisa
+                sambil mengulang materinya sebelom tanggal tersebut
+                <br /><br />
+                Untuk Grup Eksklusifnya kamu bisa diskusi dan bertanya kapan
+                saja hingga 14 hari juga
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sticky Button Start -->
+    <div
+      class="fixed -bottom-1 w-full p-4 bg-white shadow-lg md:hidden lg:hidden xl:hidden group"
+      style="z-index: 100"
+    >
+      <div class="w-1/2 mx-auto">
+        <a
+          onclick="openBundleModal()"
+          class="block mx-auto py-3 px-3 text-[14px] text-black rounded-full bg-[#f2cf59] hover:opacity-80 lg:w-[290px] lg:h-[54px] text-center uppercase font-bold group-hover:animate-bounce"
+          style="background-color: #f2cf59"
+          >Daftar Sekarang</a
+        >
+      </div>
+    </div>
+    <!-- Sticky Button End -->
+
+    <div class="buy-overlay-modal" style="display: none">
+      <div class="buy-modal">
+        <img
+          class="mx-auto"
+          src="https://startyourcontentacademy.com/assets/img/bundle_cwdigital_wcc/Bundle01c.png"
+        />
+        <div class="text-[16px] text-center">
+          Sebelum kamu checkout aku mau memastikan nih,
+        </div>
+        <h2 class="lg:text-[22px] text-[20px] font-bold text-center">
+          Apa kamu sudah pernah Beli
+          <span class="text-green">Produk Digital</span> Sebelumnya?
+        </h2>
+        <br />
+        <div class="text-[16px] text-center">
+          Karena kalau belum, aku punya
+          <b class="text-green">Penawaran Spesial</b> untukmu dan ini hanya
+          <b class="text-green">berlaku 1 kali...</b>
+        </div>
+
+        <div
+          class="flex justify-center gap-4 mx-auto"
+          style="margin-top: 40px; width: 100%"
+        >
+          <a
+            href="course1.html"
+            class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-yellow"
+            >BELUM PERNAH</a
+          >
+        </div>
+        <div
+          class="flex justify-center gap-4 mx-auto"
+          style="margin-bottom: 50px; margin-top: 20px; width: 100%"
+        >
+          <a
+            href="course1.html"
+            class="uppercase text-[0.8rem] p-3 p-sm-1 rounded-full hover:opacity-80 lg:text-[16px] lg:py-4 text-center font-bold button-green-outline"
+            >Sudah Jadi Member Produk Digital</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const openBundleModal = () => {
+        $(".buy-overlay-modal").show();
+      };
+
+      const toggleFAQ = (elem) => {
+        if ($(elem).hasClass("closed")) {
+          $(elem).removeClass("closed");
+          $(elem).siblings(".faq-content").removeClass("closed");
+        } else {
+          $(elem).addClass("closed");
+          $(elem).siblings(".faq-content").addClass("closed");
+        }
+        // $(elem).siblings(".faq-content").toggle(0.5 );
+      };
+
+      $(".testi-slider-affiliate").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        prevArrow: $(".prev-testi-slider-affiliate"),
+        nextArrow: $(".next-testi-slider-affiliate"),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      $(".cerita-slider-affiliate").slick({
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        autoplay: true,
+        prevArrow: $(".prev-cerita-slider-affiliate"),
+        nextArrow: $(".next-cerita-slider-affiliate"),
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      const show_full_description = (elem) => {
+        $(elem).siblings(".text-full").show();
+        $(elem).siblings(".text-short").hide();
+        $(elem).hide();
+      };
+
+      const show_checkout_confirmation_modal = () => {
+        $("#checkout-confirmation-modal").show();
+      };
+    </script>
+
+    <!-- Footer Start -->
+    <footer class="bg-[#353535] bottom-0 w-full text-white pb-6 lg:px-10">
+      <div class="lg:justify-between lg:flex">
+        <div class="p-5">
+          <a href="index.html"
+            ><img
+              class="w-[110px] lg:w-[189px] lg:h-[116px]"
+              src="https://startyourcontentacademy.com/assets/img/logo-footer.png"
+              alt=""
+          /></a>
+          <p class="mt-5">
+            Helping people build and grow their brand through social media
+            content.
+          </p>
+
+          <div class="mt-5 md:hidden lg:hidden">
+            <h3>Cara Menggunakan:</h3>
+            <a href="tutorial.html" class="pt-3 text-lg"
+              ><i class="fa-solid fa-person-chalkboard text-primary"></i>
+              Tutorial</a
+            >
+          </div>
+
+          <h6 class="mt-5 font-semibold">Whatsapp: +62 813-7419-2252</h6>
+          <h6 class="font-semibold">Email: info@syca.com</h6>
+        </div>
+        <div class="p-5">
+          <h3>Kunjungi Social Media Kami</h3>
+          <div class="flex gap-4 mt-5">
+            <a href="https://www.instagram.com/syca" target="_blank"
+              ><img
+                class="h-[50px] w-[50px]"
+                src="https://startyourcontentacademy.com/assets/img/icon/ig.png"
+                alt=""
+            /></a>
+            <a href="https://www.tiktok.com/@syca" target="_blank"
+              ><img
+                class="h-[50px] w-[50px]"
+                src="https://startyourcontentacademy.com/assets/img/icon/tiktok.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="hidden mt-5 lg:block">
+            <h3>Cara Menggunakan:</h3>
+            <a
+              href="https://startyourcontentacademy.com/instruction"
+              class="pt-3 text-lg"
+              ><i class="fa-solid fa-person-chalkboard text-primary"></i>
+              Tutorial</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <script src="https://startyourcontentacademy.com/assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.8/sweetalert2.all.js"></script>
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script>
+      function logout() {
+        Swal.fire({
+          title: "Are you sure?",
+          text: "You will be logged out!",
+          icon: "warning",
+          showCancelButton: true,
+          confirmButtonText: "yes",
+          denyButtonText: `no`,
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            $.ajax({
+              url: "https://startyourcontentacademy.com/sign_in/logout",
+              type: "GET",
+              dataType: "JSON",
+              async: true,
+              success: function (response) {
+                location.reload();
+              },
+              error: function (jqXHR, textStatus, errorThrown) {
+                ajaxErrRes(jqXHR, textStatus, errorThrown);
+              },
+            });
+          }
+        });
+      }
+    </script>
+
+    <!-- Konten lainnya -->
+    <div class="rn-progress-parent contentPc rn-backto-top-active">
+      <svg
+        class="rn-back-circle svg-inner"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 174.047;
+          "
+        ></path>
+      </svg>
+    </div>
+
+    <script>
+      // Scroll event listener
+      window.addEventListener("scroll", function () {
+        const scrollButton = document.querySelector(".rn-progress-parent");
+        if (window.scrollY > 200) {
+          scrollButton.classList.add("rn-backto-top-active");
+        } else {
+          scrollButton.classList.remove("rn-backto-top-active");
+        }
+      });
+
+      // Event click untuk scroll ke atas
+      document
+        .querySelector(".rn-progress-parent")
+        .addEventListener("click", function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+      window.addEventListener("scroll", function () {
+        const scrollButton = document.querySelector(".rn-progress-parent");
+        const progressPath = document.querySelector(
+          ".rn-progress-parent svg path"
+        );
+
+        // Total panjang lintasan lingkaran (perhitungan SVG)
+        const pathLength = progressPath.getTotalLength();
+
+        // Hitung posisi scroll
+        const scrollTop = window.scrollY;
+        const documentHeight =
+          document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / documentHeight) * pathLength;
+
+        // Update stroke-dashoffset berdasarkan progress
+        progressPath.style.strokeDasharray = `${pathLength}, ${pathLength}`;
+        progressPath.style.strokeDashoffset = pathLength - progress;
+
+        // Tampilkan atau sembunyikan tombol berdasarkan posisi scroll
+        if (scrollTop > 200) {
+          scrollButton.classList.add("rn-backto-top-active");
+        } else {
+          scrollButton.classList.remove("rn-backto-top-active");
+        }
+      });
+    </script>
+  </body>
+</html>
