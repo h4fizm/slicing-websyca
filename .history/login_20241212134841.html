@@ -189,7 +189,10 @@
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="kelas.html">Kelas</a></li>
                     <li>
-                      <a href="testimoni.html">Testimoni</a>
+                      <a
+                        href="https://startyourcontentacademy.com/testimoni_course"
+                        >Testimoni</a
+                      >
                     </li>
                     <li><a href="tutorial.html">Tutorial</a></li>
                     <li><a href="kendala-akses.html">Kendala Akses</a></li>
@@ -221,7 +224,7 @@
 
                     <!-- Cart Icon -->
                     <li class="contentPc">
-                      <a href="kelas.html">
+                      <a href="#allCourse">
                         <img
                           src="https://startyourcontentacademy.com/assets/icon/cart.png"
                           class="img-fluid"
@@ -1000,6 +1003,62 @@
         </div>
       </div>
     </div>
+
+    <style>
+      .footer_login {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: none;
+        z-index: 999;
+        /* awalnya disembunyikan */
+      }
+
+      .whatsapp-dekstop-v {
+        display: block !important;
+      }
+
+      .whatsapp-mobile-v {
+        display: none !important;
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* Tampilkan footer_login ketika dalam mode hp */
+
+        .whatsapp-dekstop-v {
+          display: none !important;
+        }
+
+        .whatsapp-mobile-v {
+          display: block !important;
+        }
+
+        .footer_login {
+          display: block;
+        }
+
+        footer {
+          margin-bottom: 23px;
+        }
+
+        .rn-progress-parent {
+          bottom: 0;
+          margin: 15px;
+        }
+      }
+    </style>
+    <!-- Footer_login -->
+    <!-- <div class="text-center footer_login">
+		<div class="col-md-6">
+			<div class="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
+				<a href="https://startyourcontentacademy.com/#kelas" class="edu-btn">Daftar Sekarang [Klik Disini]</a>
+			</div>
+		</div>
+	</div> -->
     <div class="rn-progress-parent contentPc">
       <svg
         class="rn-back-circle svg-inner"

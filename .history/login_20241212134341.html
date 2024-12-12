@@ -189,7 +189,10 @@
                     <li><a href="index.html">Beranda</a></li>
                     <li><a href="kelas.html">Kelas</a></li>
                     <li>
-                      <a href="testimoni.html">Testimoni</a>
+                      <a
+                        href="https://startyourcontentacademy.com/testimoni_course"
+                        >Testimoni</a
+                      >
                     </li>
                     <li><a href="tutorial.html">Tutorial</a></li>
                     <li><a href="kendala-akses.html">Kendala Akses</a></li>
@@ -197,38 +200,42 @@
                 </nav>
               </div>
 
-              <!-- Right Section -->
+              <!-- Header Right Section -->
               <div class="header-right">
                 <nav class="mainmenu-nav">
                   <ul class="mainmenu">
                     <li class="contentPc"><a href="login.html">Login</a></li>
-
-                    <!-- WhatsApp and Burger Button -->
-                    <li class="whatsapp-menu-container">
+                    <li>
                       <a href="https://wa.me/+6281374192252" target="_blank">
                         <img
                           width="40"
                           src="https://startyourcontentacademy.com/assets/icon/wa2.svg"
+                          alt="WhatsApp"
                         />
                       </a>
-                      <button
-                        class="hamberger-button btn-sm"
-                        onclick="doMenu()"
-                      >
-                        <i class="fas fa-bars"></i>
-                      </button>
                     </li>
-
-                    <!-- Cart Icon -->
                     <li class="contentPc">
-                      <a href="kelas.html">
-                        <img
+                      <a href="kelas.html"
+                        ><img
                           src="https://startyourcontentacademy.com/assets/icon/cart.png"
                           class="img-fluid"
                           style="width: 17px"
                           alt="Cart"
-                        />
-                      </a>
+                      /></a>
+                    </li>
+                    <li class="m-auto mobile-menu-bar d-block d-xl-none">
+                      <button
+                        class="hamberger-button btn-sm"
+                        style="
+                          padding: 10px;
+                          border: 0px;
+                          color: var(--color-primary);
+                          border-radius: 15px;
+                        "
+                        onclick="doMenu()"
+                      >
+                        <i class="icon-54"></i>
+                      </button>
                     </li>
                   </ul>
                 </nav>
@@ -251,12 +258,11 @@
               </div>
               <div class="close-menu">
                 <button class="close-button">
-                  <i class="fas fa-times"></i>
+                  <i class="icon-73"></i>
                 </button>
               </div>
             </div>
 
-            <!-- Mobile Menu Content -->
             <div class="content-hp-menu">
               <ul class="mainmenu">
                 <li><a href="index.html">Beranda</a></li>
@@ -264,15 +270,15 @@
                 <li><a href="testimoni.html">Testimoni</a></li>
                 <li><a href="tutorial.html">Tutorial</a></li>
                 <li>
-                  <a href="kelas.html">
-                    <img
+                  <a href="kelas.html"
+                    ><img
                       src="https://startyourcontentacademy.com/assets/icon/cart.png"
                       class="img-fluid"
                       style="width: 17px"
                       alt="Cart"
                     />
-                    Carts
-                  </a>
+                    Carts</a
+                  >
                 </li>
                 <li><a href="login.html">Login</a></li>
               </ul>
@@ -1000,6 +1006,62 @@
         </div>
       </div>
     </div>
+
+    <style>
+      .footer_login {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #fff;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        display: none;
+        z-index: 999;
+        /* awalnya disembunyikan */
+      }
+
+      .whatsapp-dekstop-v {
+        display: block !important;
+      }
+
+      .whatsapp-mobile-v {
+        display: none !important;
+      }
+
+      @media only screen and (max-width: 600px) {
+        /* Tampilkan footer_login ketika dalam mode hp */
+
+        .whatsapp-dekstop-v {
+          display: none !important;
+        }
+
+        .whatsapp-mobile-v {
+          display: block !important;
+        }
+
+        .footer_login {
+          display: block;
+        }
+
+        footer {
+          margin-bottom: 23px;
+        }
+
+        .rn-progress-parent {
+          bottom: 0;
+          margin: 15px;
+        }
+      }
+    </style>
+    <!-- Footer_login -->
+    <!-- <div class="text-center footer_login">
+		<div class="col-md-6">
+			<div class="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
+				<a href="https://startyourcontentacademy.com/#kelas" class="edu-btn">Daftar Sekarang [Klik Disini]</a>
+			</div>
+		</div>
+	</div> -->
     <div class="rn-progress-parent contentPc">
       <svg
         class="rn-back-circle svg-inner"
